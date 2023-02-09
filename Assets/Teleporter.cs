@@ -7,11 +7,16 @@ using UnityEngine.Serialization;
 
 public class Teleporter : MonoBehaviour
 {
-    public Teleporter OtherTeleport;
+    public Teleporter otherTeleport;
+    [SerializeField] private float teleportCooldown = 0.1f;
     private ThirdPersonController _player;
-    [HideInInspector] public bool isTeleported = false;
+    private bool isTeleportCooldown = false;
     
-    private float _dirPrevious;
+    private float _dirZPrevious;
+    private float _dirXPrevious;
+    private float _zDir;
+    private float _xDir;
+    
     private bool _isFirstDirCheck = true;
 
     private void Awake()
@@ -21,24 +26,29 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        float zDir = Mathf.Sign(transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).z);
+        _zDir = Mathf.Sign(transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).z);
+        _xDir = Mathf.Sign(transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).x);
         
         if (_isFirstDirCheck)
         {
-            _dirPrevious = zDir;
+            _dirZPrevious = _zDir;
+            _dirXPrevious = _xDir;
+            
             _isFirstDirCheck = false;
         }
         
         _player._isTeleporting = false;
         
-        if (zDir != _dirPrevious)
+        if ((_zDir != _dirZPrevious || _xDir !=_dirXPrevious) && !isTeleportCooldown)
         {
             _isFirstDirCheck = true;
             Teleport(other.transform);
-            isTeleported = true;
+           // isTeleported = true;
+            otherTeleport.OnTravellerEnterPortal();
         }
 
-        _dirPrevious = zDir;
+        _dirZPrevious = _zDir;
+        _dirXPrevious = _xDir;
     }
 
     private void Teleport(Transform obj)
@@ -46,7 +56,7 @@ public class Teleporter : MonoBehaviour
         // Position
          Vector3 localPos = transform.worldToLocalMatrix.MultiplyPoint3x4(obj.position);
          localPos = new Vector3(-localPos.x, localPos.y, -localPos.z);
-         obj.position = OtherTeleport.transform.localToWorldMatrix.MultiplyPoint3x4(localPos);
+         obj.position = otherTeleport.transform.localToWorldMatrix.MultiplyPoint3x4(localPos);
          
          _player._isTeleporting = true;
     }
@@ -54,18 +64,40 @@ public class Teleporter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _isFirstDirCheck = true;
-        _player._isTeleporting = true;
+        _player._isTeleporting = false;
+        _zDir = Mathf.Sign(transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).z);
+        _xDir = Mathf.Sign(transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).x);
+        _dirZPrevious = _zDir;
+        _dirXPrevious = _xDir;
+        
+        //isTeleported = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        //other.gameObject.layer = 8;
+        //isTeleported = false;
     }
+
+    public void OnTravellerEnterPortal()
+    {
+       // isTeleported = true;
+       _isFirstDirCheck = true;
+        StartCoroutine(TeleportCooldown());
+        
+    }
+    
     void OnValidate()
     {
-        if (OtherTeleport != null)
+        if (otherTeleport != null)
         {
-            OtherTeleport.OtherTeleport = this;
+            otherTeleport.otherTeleport = this;
         }
+    }
+
+    private IEnumerator TeleportCooldown()
+    {
+        isTeleportCooldown = true;
+        yield return new WaitForSeconds(teleportCooldown);
+        isTeleportCooldown = false;
     }
 }
