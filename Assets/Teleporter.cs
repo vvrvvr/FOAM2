@@ -1,14 +1,12 @@
-﻿using System;
+﻿
 using System.Collections;
 using StarterAssets;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Teleporter : MonoBehaviour
 {
     public Teleporter otherTeleport;
-    [SerializeField] private float teleportCooldown = 0.1f;
+    [SerializeField] private float teleportCooldown = 0.3f;
     private ThirdPersonController _player;
     private bool isTeleportCooldown = false;
     
@@ -71,11 +69,6 @@ public class Teleporter : MonoBehaviour
         _dirXPrevious = _xDir;
         
         //isTeleported = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        //isTeleported = false;
     }
 
     public void OnTravellerEnterPortal()

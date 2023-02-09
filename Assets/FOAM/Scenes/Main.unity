@@ -1329,8 +1329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebc1d4207992cd48bb98c1daef4b5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OtherTeleport: {fileID: 4424622720647656043}
-  isTeleported: 0
+  otherTeleport: {fileID: 4424622720647656043}
+  teleportCooldown: 0.3
 --- !u!1 &1852811489794443084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1342,7 @@ GameObject:
   - component: {fileID: 1852811489794443079}
   - component: {fileID: 1852811489794443082}
   - component: {fileID: 1852811489794443081}
+  - component: {fileID: 1852811489794443085}
   m_Layer: 0
   m_Name: Red Portal2
   m_TagString: Untagged
@@ -1349,6 +1350,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1852811489794443085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852811489794443084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73181ee55fcc14ea27fa91bbc02b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 4424622720647656048}
+  _screen: {fileID: 1320550895}
+  nearClipOffset: 0.05
+  nearClipLimit: 0.2
 --- !u!4 &1852811490341111071
 Transform:
   m_ObjectHideFlags: 0
@@ -1765,6 +1782,7 @@ GameObject:
   - component: {fileID: 4424622720647656047}
   - component: {fileID: 4424622720647656043}
   - component: {fileID: 4424622720647656042}
+  - component: {fileID: 4424622720647656048}
   m_Layer: 0
   m_Name: Blue Portal2
   m_TagString: Untagged
@@ -1797,8 +1815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebc1d4207992cd48bb98c1daef4b5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OtherTeleport: {fileID: 1852811489794443082}
-  isTeleported: 0
+  otherTeleport: {fileID: 1852811489794443082}
+  teleportCooldown: 0.3
 --- !u!4 &4424622720647656047
 Transform:
   m_ObjectHideFlags: 0
@@ -1807,7 +1825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4424622720647656040}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000002980232}
-  m_LocalPosition: {x: -4.2299995, y: 1.62, z: 8.409999}
+  m_LocalPosition: {x: -4.2299995, y: 1.21, z: 8.409999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1816,6 +1834,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &4424622720647656048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424622720647656040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73181ee55fcc14ea27fa91bbc02b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPortal: {fileID: 1852811489794443085}
+  _screen: {fileID: 243793832}
+  nearClipOffset: 0.05
+  nearClipLimit: 0.2
 --- !u!1001 &8345070700268369567
 PrefabInstance:
   m_ObjectHideFlags: 0
