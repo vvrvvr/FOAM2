@@ -179,7 +179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 71bbe2cd425f08b4e9ed229412dead9f, type: 2}
+  - {fileID: 2100000, guid: 1e33cbfe6e399b54897eccd62c7ddeb5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -838,7 +838,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c233c866044b944cac63b897d0fdf4b, type: 2}
+  - {fileID: 2100000, guid: 1e33cbfe6e399b54897eccd62c7ddeb5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 1852811489794443081}
   - component: {fileID: 1852811489794443085}
   m_Layer: 0
-  m_Name: Red Portal2
+  m_Name: Red Portal
   m_TagString: Untagged
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 4424622720647656042}
   - component: {fileID: 4424622720647656048}
   m_Layer: 0
-  m_Name: Blue Portal2
+  m_Name: Blue Portal
   m_TagString: Untagged
   m_Icon: {fileID: -982381405332843317, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
