@@ -15,19 +15,58 @@ public class PortalCam : MonoBehaviour
     // Private variables
     private Camera _mainCamera;
     private Renderer _rendererScreen;
+    private Material _screenMat;
+    private bool _isMeshSkinnedMesh = false;
+    private SkinnedMeshRenderer _skinnedMeshRenderer;
+    private MeshRenderer _meshRenderer;
 
     private void Awake()
     {
         portalСam = GetComponentInChildren<Camera>();
+        _screenMat = new Material(Shader.Find("Unlit/PortalShader"));
+
+        _skinnedMeshRenderer = _screen.GetComponent<SkinnedMeshRenderer>();
+        _meshRenderer = _screen.GetComponent<MeshRenderer>();
+
+        if (_skinnedMeshRenderer != null)
+        {
+            _isMeshSkinnedMesh = true;
+        }
+        else if (_meshRenderer != null)
+        {
+            _isMeshSkinnedMesh = false;
+        }
+
+        if (_isMeshSkinnedMesh)
+        {
+            _skinnedMeshRenderer.material = _screenMat;
+        }
+        else
+        {
+            _meshRenderer.material = _screenMat;
+        }
     }
 
     private void Start()
     {
         _mainCamera = Camera.main;
         linkedPortal.portalСam.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        _rendererScreen = _screen.GetComponent<MeshRenderer>();
+
+        if (_isMeshSkinnedMesh)
+        {
+            _rendererScreen = _skinnedMeshRenderer;
+            _skinnedMeshRenderer.material.mainTexture = linkedPortal.portalСam.targetTexture;
+        }
+        else
+        {
+            _rendererScreen = _meshRenderer;
+            _meshRenderer.GetComponent<MeshRenderer>().sharedMaterial.mainTexture =
+                linkedPortal.portalСam.targetTexture;
+        }
+
+        //_rendererScreen = _screen.GetComponent<MeshRenderer>();
         //_screen.GetComponent<SkinnedMeshRenderer>().material.mainTexture = linkedPortal.portalСam.targetTexture;
-        _screen.GetComponent<MeshRenderer>().sharedMaterial.mainTexture = linkedPortal.portalСam.targetTexture;
+        //_screen.GetComponent<MeshRenderer>().sharedMaterial.mainTexture = linkedPortal.portalСam.targetTexture;
     }
 
     private void Update()
@@ -40,14 +79,14 @@ public class PortalCam : MonoBehaviour
 
         // Position
         Vector3 lookerPosition =
-            linkedPortal.transform.worldToLocalMatrix.MultiplyPoint3x4(Camera.main.transform.position);
+            linkedPortal.transform.worldToLocalMatrix.MultiplyPoint3x4(_mainCamera.transform.position);
         lookerPosition = new Vector3(-lookerPosition.x, lookerPosition.y, -lookerPosition.z);
         portalСam.transform.localPosition = lookerPosition;
 
         // Rotation
         Quaternion difference = transform.rotation *
                                 Quaternion.Inverse(linkedPortal.transform.rotation * Quaternion.Euler(0, 180, 0));
-        portalСam.transform.rotation = difference * Camera.main.transform.rotation;
+        portalСam.transform.rotation = difference * _mainCamera.transform.rotation;
 
         // Clipping
         portalСam.nearClipPlane = lookerPosition.magnitude;
