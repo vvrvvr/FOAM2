@@ -80,12 +80,12 @@ public class PortalCam : MonoBehaviour
         // Position
         Vector3 lookerPosition =
             linkedPortal.transform.worldToLocalMatrix.MultiplyPoint3x4(_mainCamera.transform.position);
-        lookerPosition = new Vector3(-lookerPosition.x, lookerPosition.y, -lookerPosition.z);
+        lookerPosition = new Vector3(lookerPosition.x, lookerPosition.y, lookerPosition.z);
         portalСam.transform.localPosition = lookerPosition;
 
         // Rotation
         Quaternion difference = transform.rotation *
-                                Quaternion.Inverse(linkedPortal.transform.rotation * Quaternion.Euler(0, 180, 0));
+                                Quaternion.Inverse(linkedPortal.transform.rotation * Quaternion.Euler(0, 0, 0));
         portalСam.transform.rotation = difference * _mainCamera.transform.rotation;
 
         // Clipping
