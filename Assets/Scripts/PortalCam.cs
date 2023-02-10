@@ -9,10 +9,10 @@ public class PortalCam : MonoBehaviour
     [SerializeField] private GameObject _screen;
     private Camera portalСam;
 
-    [Header("Advanced Settings")] public float nearClipOffset = 0.05f;
-    public float nearClipLimit = 0.2f;
+    [Header("Advanced Settings")] public float nearClipOffset = 1f;
 
     // Private variables
+    private float nearClipLimit = 0.2f; // для функции, которую я не использую
     private Camera _mainCamera;
     private Renderer _rendererScreen;
     private Material _screenMat;
@@ -23,7 +23,7 @@ public class PortalCam : MonoBehaviour
     private void Awake()
     {
         portalСam = GetComponentInChildren<Camera>();
-        _screenMat = new Material(Shader.Find("Unlit/PortalShader"));
+        _screenMat = new Material(Shader.Find("Unlit/NewUnlitShader2"));
 
         _skinnedMeshRenderer = _screen.GetComponent<SkinnedMeshRenderer>();
         _meshRenderer = _screen.GetComponent<MeshRenderer>();
@@ -63,10 +63,6 @@ public class PortalCam : MonoBehaviour
             _meshRenderer.GetComponent<MeshRenderer>().sharedMaterial.mainTexture =
                 linkedPortal.portalСam.targetTexture;
         }
-
-        //_rendererScreen = _screen.GetComponent<MeshRenderer>();
-        //_screen.GetComponent<SkinnedMeshRenderer>().material.mainTexture = linkedPortal.portalСam.targetTexture;
-        //_screen.GetComponent<MeshRenderer>().sharedMaterial.mainTexture = linkedPortal.portalСam.targetTexture;
     }
 
     private void Update()
@@ -89,8 +85,8 @@ public class PortalCam : MonoBehaviour
         portalСam.transform.rotation = difference * _mainCamera.transform.rotation;
 
         // Clipping
-        portalСam.nearClipPlane = lookerPosition.magnitude;
-        // SetNearClipPlane();
+        portalСam.nearClipPlane = lookerPosition.magnitude +nearClipOffset;
+        //SetNearClipPlane();
     }
 
 
