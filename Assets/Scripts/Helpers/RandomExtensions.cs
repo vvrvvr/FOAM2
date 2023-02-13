@@ -12,4 +12,9 @@ static class RandomExtensions
             (array[n], array[k]) = (array[k], array[n]);
         }
     }
+    public static T GetRandomElement<T>(T[] array)
+    {
+        int randomIndex = UnityEngine.Random.Range(0, array.Length);
+        return array[randomIndex];
+    }
 }
