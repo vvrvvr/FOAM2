@@ -34,6 +34,11 @@ public class GhostSpawner : MonoBehaviour
         _currentSpawnRate = _spawnRateNormal;
         _player = ThirdPersonController.Instance;
         _playerTransform = _player.GetComponent<Transform>();
+
+        foreach (var ghost in _ghosts)
+        {
+            ghost.SetActive(false);
+        }
     }
 
     // Update is called once per frame
