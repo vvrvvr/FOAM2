@@ -13,7 +13,9 @@ public class GhostSpawner : MonoBehaviour
     [SerializeField] private float _spawnRateNormal = 3f;
     [SerializeField] private float _spawnRateMin = 1f;
     [SerializeField] private Transform[] _spawnPoints = Array.Empty<Transform>();
+
     [SerializeField] private GameObject[] _ghosts = Array.Empty<GameObject>();
+
     //public LayerMask mask;
     public bool IsGhostSpawning = true;
 
@@ -58,13 +60,12 @@ public class GhostSpawner : MonoBehaviour
         {
             _currentTime = 0f;
         }
-        
     }
 
     private void SpawnGhost()
     {
         Debug.Log("Checked in " + _currentSpawnRate);
-        
+
         var currentPlayerPosition = _playerTransform.position;
         var rng = new Random();
         rng.Shuffle(_spawnPoints);
@@ -81,8 +82,13 @@ public class GhostSpawner : MonoBehaviour
                     Debug.Log("spawned at " + _spawnPoints[i].name + "distance: " + dist);
                     var ghost = RandomExtensions.GetRandomElement(_ghosts);
                     ghost.SetActive(true);
-                    
-                    ghost.GetComponent<Transform>().position = _spawnPoints[i].position;
+
+                    var ghostTransform = ghost.GetComponent<Transform>();
+                    ghostTransform.position = _spawnPoints[i].position;
+                    Vector3 lookDirection = (_mainCamera.transform.position - ghostTransform.position).normalized;
+                    Quaternion rotation = Quaternion.LookRotation(-lookDirection, Vector3.up);
+                    ghostTransform.transform.rotation = rotation;
+
                     _currentSpawnRate = _spawnRateNormal;
                     break;
                 }
