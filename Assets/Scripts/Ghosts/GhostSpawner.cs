@@ -85,9 +85,9 @@ public class GhostSpawner : MonoBehaviour
 
                     var ghostTransform = ghost.GetComponent<Transform>();
                     ghostTransform.position = _spawnPoints[i].position;
-                    Vector3 lookDirection = (_mainCamera.transform.position - ghostTransform.position).normalized;
-                    Quaternion rotation = Quaternion.LookRotation(-lookDirection, Vector3.up);
-                    ghostTransform.transform.rotation = rotation;
+                    // Vector3 lookDirection = (_mainCamera.transform.position - ghostTransform.position).normalized;
+                    // Quaternion rotation = Quaternion.LookRotation(-lookDirection, Vector3.up);
+                    // ghostTransform.transform.rotation = rotation;
 
                     _currentSpawnRate = _spawnRateNormal;
                     break;
