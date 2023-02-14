@@ -14,7 +14,8 @@ public class GhostSpawner : MonoBehaviour
     [SerializeField] private float _spawnRateMin = 1f;
     [SerializeField] private Transform[] _spawnPoints = Array.Empty<Transform>();
     [SerializeField] private GameObject[] _ghosts = Array.Empty<GameObject>();
-    public LayerMask mask;
+    //public LayerMask mask;
+    public bool IsGhostSpawning = true;
 
 
     //private
@@ -44,12 +45,20 @@ public class GhostSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _currentTime += Time.deltaTime;
-        if (_currentTime >= _currentSpawnRate)
+        if (IsGhostSpawning)
+        {
+            _currentTime += Time.deltaTime;
+            if (_currentTime >= _currentSpawnRate)
+            {
+                _currentTime = 0f;
+                SpawnGhost();
+            }
+        }
+        else
         {
             _currentTime = 0f;
-            SpawnGhost();
         }
+        
     }
 
     private void SpawnGhost()
@@ -89,7 +98,7 @@ public class GhostSpawner : MonoBehaviour
         if (angle < _mainCamera.fieldOfView)
         {
             Ray ray = new Ray(_mainCamera.transform.position, dir);
-            if (!Physics.Raycast(ray, dir.magnitude, mask))
+            if (!Physics.Raycast(ray, dir.magnitude))
             {
                 return true;
             }

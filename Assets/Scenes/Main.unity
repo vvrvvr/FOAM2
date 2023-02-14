@@ -1295,7 +1295,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765997392}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2557,7 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minSpawnDistance: 0
-  _maxSpawnDistance: 5
+  _maxSpawnDistance: 50
   _spawnRateNormal: 7
   _spawnRateMin: 1
   _spawnPoints:
@@ -2577,9 +2577,7 @@ MonoBehaviour:
   - {fileID: 2123784843}
   - {fileID: 800234013}
   - {fileID: 285521643}
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
+  IsGhostSpawning: 1
 --- !u!4 &1756952893
 Transform:
   m_ObjectHideFlags: 0
