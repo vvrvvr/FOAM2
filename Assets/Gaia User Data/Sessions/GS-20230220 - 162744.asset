@@ -23,7 +23,7 @@ MonoBehaviour:
   m_terrainWidth: 512
   m_terrainDepth: 512
   m_terrainHeight: 512
-  m_seaLevel: 8
+  m_seaLevel: 3.9999962
   m_spawnDensity: 0.8
   m_isLocked: 0
   m_previewImageBytes: 
@@ -125,6 +125,195 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:03:03
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200303
+    m_operationDateTime: 20.02.2023 20:03:04
+    scriptableObjectAssetGUID: 4aa0814dbeade5b45b799779c0a05a1c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:04:01
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200401
+    m_operationDateTime: 20.02.2023 20:04:01
+    scriptableObjectAssetGUID: e176e2cdcffc20a44bdbfa085eb53eca
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:04:30
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200430
+    m_operationDateTime: 20.02.2023 20:04:30
+    scriptableObjectAssetGUID: 545154ebbcc22b84c839e086322f36c6
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:05:07
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200507
+    m_operationDateTime: 20.02.2023 20:05:07
+    scriptableObjectAssetGUID: 6c0155eb5cbb4cb4cacbaf6ba30d6159
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:07:00
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200700
+    m_operationDateTime: 20.02.2023 20:07:00
+    scriptableObjectAssetGUID: ea47d305896cec34aa60b57dd9824740
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:07:56
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200756
+    m_operationDateTime: 20.02.2023 20:07:56
+    scriptableObjectAssetGUID: 46e05c6b3f1a34d40a271a39271eed93
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:08:18
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200819
+    m_operationDateTime: 20.02.2023 20:08:19
+    scriptableObjectAssetGUID: 8a04b2d0dbf04da45b4b076defdb76f2
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:08:33
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200834
+    m_operationDateTime: 20.02.2023 20:08:34
+    scriptableObjectAssetGUID: d04e88043742ef848b4838553e48242a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 20.02.2023 20:09:51
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230220 - 200952
+    m_operationDateTime: 20.02.2023 20:09:52
+    scriptableObjectAssetGUID: 8b69e96f644ee994a8ebf8780693371b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: 8fd585f15e8ce954698cb5292b4c8a6b
     isWorldmap: 0
@@ -146,10 +335,60 @@ MonoBehaviour:
     recalculate: 0
     min: 0
     max: 64.39161
+  - guid: 2cbcf1f479c594c41bc8b5d7a12f3e52
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 16.469002
+  - guid: 29d727c727533ec4c821852275c4fef1
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 16.445564
+  - guid: 9fb633b5a00bc4a43992595a42dca08d
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 24.476936
+  - guid: 9fe9ed6654e0b114dba03261a5afcd97
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 50.719524
+  - guid: 7ce4e4b1be282254b9f63ce680935b5f
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 20.984695
+  - guid: 153eb1eb5b569d042a9113dc004446c0
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 19.344046
+  - guid: 93d6ed3aa04f367498e77c280d33907f
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 9.773586
+  - guid: 4bd0d1cd23ead17458bea1af689c73a6
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 34.742718
+  - guid: 446ccb83fd5e4344c8b1cc80ec8d7e3d
+    isWorldmap: 0
+    recalculate: 1
+    min: 0
+    max: 34.633343
+  - guid: c289b435c6f047e43a854a10be8076f4
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 52.688305
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
     min: 0
-    max: 29.13207
+    max: 14.027886
   m_bakedMaskCacheEntries: []
   m_worldBiomeMaskSettings: {fileID: 0}

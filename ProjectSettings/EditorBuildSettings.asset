@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ENVIR.unity
+    guid: c04deafd01b5fbe4e825963514dd0fc0
   - enabled: 0
     path: Assets/Third Party/Scenes/Playground.unity
     guid: e9017d5f96b9f09489b4b37e1d6eb914
