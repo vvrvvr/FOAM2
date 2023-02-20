@@ -103,7 +103,7 @@ Material:
     - _FoamTexTile: 256
     - _Foam_Metallic: 0.4
     - _Foam_Smoothness: 0.2
-    - _Metallic: 0.418
+    - _Metallic: 0.983
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
