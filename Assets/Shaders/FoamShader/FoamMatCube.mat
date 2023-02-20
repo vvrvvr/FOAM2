@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FoamMat 2
+  m_Name: FoamMatCube
   m_Shader: {fileID: -6465566751694194690, guid: 3a29875eb84c67545855ea64b6c6708a,
     type: 3}
   m_ValidKeywords: []
@@ -104,10 +104,10 @@ Material:
     - _EmissionAmount: 28.23
     - _EnvironmentReflections: 1
     - _Foam: 1
-    - _FoamAmount: 0.75
+    - _FoamAmount: 19.7
     - _FoamCutof: 2.6
     - _FoamCutoff: 6.31
-    - _FoamScale: 20
+    - _FoamScale: 20.07
     - _FoamSpeed: 0.1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -134,7 +134,7 @@ Material:
     - _VoronoiNoiseMultiplier: 0.5
     - _VoronoiWaveScale: 2
     - _WaveScale: 0.3
-    - _WaveScale2: 8.93
+    - _WaveScale2: 2
     - _WaveSpeed: 0.01
     - _WorkflowMode: 1
     - _ZWrite: 1

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FoamMat 2
+  m_Name: FoamMatPlane
   m_Shader: {fileID: -6465566751694194690, guid: 3a29875eb84c67545855ea64b6c6708a,
     type: 3}
   m_ValidKeywords: []
@@ -104,7 +104,7 @@ Material:
     - _EmissionAmount: 28.23
     - _EnvironmentReflections: 1
     - _Foam: 1
-    - _FoamAmount: 0.75
+    - _FoamAmount: 2.19
     - _FoamCutof: 2.6
     - _FoamCutoff: 6.31
     - _FoamScale: 20
@@ -144,7 +144,7 @@ Material:
     - _DetailsOffset: {r: 21.3, g: 0, b: 0, a: 0}
     - _DetailsStrength: {r: 11.95, g: -2.29, b: 0, a: 0}
     - _EmissionColor: {r: 2.6629057, g: 19.781586, b: 36.329643, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColor: {r: 0.94509804, g: 0, b: 0.6259007, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Strength: {r: 10, g: 10, b: 0, a: 0}
