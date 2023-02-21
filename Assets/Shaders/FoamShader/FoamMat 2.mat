@@ -134,7 +134,7 @@ Material:
     - _VoronoiNoiseMultiplier: 0.5
     - _VoronoiWaveScale: 2
     - _WaveScale: 0.3
-    - _WaveScale2: 8.93
+    - _WaveScale2: 0.16
     - _WaveSpeed: 0.01
     - _WorkflowMode: 1
     - _ZWrite: 1
@@ -143,8 +143,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailsOffset: {r: 21.3, g: 0, b: 0, a: 0}
     - _DetailsStrength: {r: 11.95, g: -2.29, b: 0, a: 0}
-    - _EmissionColor: {r: 2.6629057, g: 19.781586, b: 36.329643, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 18.049738, g: 31.673084, b: 44.842327, a: 1}
+    - _FoamColor: {r: 0.6698113, g: 0.2506526, b: 0.2506526, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Strength: {r: 10, g: 10, b: 0, a: 0}
