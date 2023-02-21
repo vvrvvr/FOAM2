@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3de024c95307eac41b262f784890e7bd, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8ba3923a6094cd48b85425f47fd7450, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -92,23 +92,23 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Contrast: 1.65
+    - _Contrast: 2.72
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Details: 1
+    - _Details: 0
     - _Dithering: -0.72
     - _DstBlend: 0
     - _Emission: 0
     - _EmissionAmount: 28.23
     - _EnvironmentReflections: 1
     - _Foam: 1
-    - _FoamAmount: 0.5
+    - _FoamAmount: 2.14
     - _FoamCutof: 2.6
-    - _FoamCutoff: 1.8
-    - _FoamScale: 14.4
-    - _FoamSpeed: 0.02
+    - _FoamCutoff: 1.75
+    - _FoamScale: 13.39
+    - _FoamSpeed: 2.21
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -121,7 +121,7 @@ Material:
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Raidal: 0
+    - _Raidal: 1
     - _Raidant: 0
     - _ReceiveShadows: 1
     - _Saturation: -4.29
@@ -130,12 +130,12 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TimeMultiplier: 1
-    - _VoronoiNoiseMultiplier: 0.45
-    - _VoronoiWaveScale: 2.06
+    - _TimeMultiplier: -2.6
+    - _VoronoiNoiseMultiplier: 0.63
+    - _VoronoiWaveScale: 3.08
     - _WaveScale: 0.3
-    - _WaveScale2: -1.89
-    - _WaveSpeed: 0.05
+    - _WaveScale2: -6.43
+    - _WaveSpeed: 1.38
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -143,8 +143,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailsOffset: {r: 0, g: 0, b: 0, a: 0}
     - _DetailsStrength: {r: 10, g: -2.29, b: 0, a: 0}
-    - _EmissionColor: {r: 0.060784314, g: 0.46862745, b: 0.019607844, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0.019607853, g: 0.18958782, b: 0.47058824, a: 1}
+    - _FoamColor: {r: 0.6509434, g: 0.28657883, b: 0.28657883, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Strength: {r: 10, g: 10, b: 0, a: 0}
