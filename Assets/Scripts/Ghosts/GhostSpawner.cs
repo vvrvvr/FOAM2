@@ -27,6 +27,7 @@ public class GhostSpawner : MonoBehaviour
     private Transform _playerTransform;
     private float _currentSpawnRate = 0f;
     private Camera _mainCamera;
+    private string _prevSpawnPointname = "some";
 
 
     // Start is called before the first frame update
@@ -77,8 +78,9 @@ public class GhostSpawner : MonoBehaviour
             float dist = Vector3.Distance(currentPlayerPosition, _spawnPoints[i].position);
             if (dist < _maxSpawnDistance && dist > _minSpawnDistance)
             {
-                if (IsInLineOfSight(_spawnPoints[i]))
+                if (IsInLineOfSight(_spawnPoints[i]) && _spawnPoints[i].name != _prevSpawnPointname )
                 {
+                    _prevSpawnPointname = _spawnPoints[i].name;
                     Debug.Log("spawned at " + _spawnPoints[i].name + "distance: " + dist);
                     var ghost = RandomExtensions.GetRandomElement(_ghosts);
                     ghost.SetActive(true);
