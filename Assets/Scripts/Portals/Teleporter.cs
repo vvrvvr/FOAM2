@@ -79,13 +79,13 @@ public class Teleporter : MonoBehaviour
         
     }
     
-    void OnValidate()
-    {
-        if (otherTeleport != null)
-        {
-            otherTeleport.otherTeleport = this;
-        }
-    }
+    // void OnValidate()
+    // {
+    //     if (otherTeleport != null)
+    //     {
+    //         otherTeleport.otherTeleport = this;
+    //     }
+    // }
 
     private IEnumerator TeleportCooldown()
     {

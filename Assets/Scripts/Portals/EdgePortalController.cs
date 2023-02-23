@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
+using DG.Tweening;
 
 public class EdgePortalController : MonoBehaviour
 {
     [SerializeField] private float distance;
+    [SerializeField] private float _portalSpeed = 1f;
     [SerializeField] private Transform _edgePortal;
 
 
@@ -53,7 +55,7 @@ public class EdgePortalController : MonoBehaviour
             Vector3 newPos = new Vector3(anchor.position.x, _edgePortal.position.y, anchor.position.z) +
                              new Vector3(newAnchorToObj.x, 0f,
                                  newAnchorToObj.z); // Вычисляем новую позицию объекта, сохраняя y координату объекта
-            _edgePortal.position = newPos; // Перемещаем объект на новую позицию
+            _edgePortal.DOMove(newPos, _portalSpeed).SetEase(Ease.Linear);
         }
     }
 }
