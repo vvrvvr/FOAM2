@@ -9,23 +9,26 @@ public class PlayerSwitchViews : MonoBehaviour
 
     //Start sequence
     [SerializeField] private CinemachineVirtualCamera startSequenceCamera;
+    [SerializeField] private CinemachineVirtualCamera flyCamera;
 
     //[SerializeField] private GameObject playerObject;
     private ThirdPersonController _playerController;
 
-    // private void OnEnable()
-    // {
-    //     CameraSwitcher.Register(firstPersonCam);
-    //     //CameraSwitcher.Register(thirdPersonCam);
-    //     CameraSwitcher.Register(startSequenceCamera);
-    // }
-    //
-    // private void OnDisable()
-    // {
-    //     CameraSwitcher.Unregister(firstPersonCam);
-    //     // CameraSwitcher.Unregister(thirdPersonCam);
-    //     CameraSwitcher.Unregister(startSequenceCamera);
-    // }
+    private void OnEnable()
+    {
+        CameraSwitcher.Register(firstPersonCam);
+        //CameraSwitcher.Register(thirdPersonCam);
+        CameraSwitcher.Register(startSequenceCamera);
+        CameraSwitcher.Register(flyCamera);
+    }
+    
+    private void OnDisable()
+    {
+        CameraSwitcher.Unregister(firstPersonCam);
+        // CameraSwitcher.Unregister(thirdPersonCam);
+        CameraSwitcher.Unregister(startSequenceCamera);
+        CameraSwitcher.Unregister(flyCamera);
+    }
 
 
     void Start()
@@ -42,14 +45,25 @@ public class PlayerSwitchViews : MonoBehaviour
     
     void SwitchView()
     {
-        if (Input.GetKeyDown(KeyCode.F)) 
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("F pressed");
+            StartStartSequence();
         }
-        if (Input.GetKeyDown(KeyCode.G)) 
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            Debug.Log("G pressed");
+            EndStartSequence();
         }
        
     }
+
+    public void StartStartSequence()
+    {
+        CameraSwitcher.SwitchCamera(startSequenceCamera);
+    }
+
+    public void EndStartSequence()
+    {
+        CameraSwitcher.SwitchCamera(firstPersonCam);
+    }
+    
 }
