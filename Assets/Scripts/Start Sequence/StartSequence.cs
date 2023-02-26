@@ -13,24 +13,27 @@ public class StartSequence : MonoBehaviour
 
     public float pushForce = 0.1f; // Сила толчка по оси x
     public float returnForce = 0.05f; // Сила возврата в исходное положение по оси x
-
-
     public int maxPushCount = 20;
-
     public float _currentTimeBetween = 0f;
     public float _timeBetweenMin = 0.4f;
     public float _timeBetweenMax = 1f;
 
+    //private
     private Rigidbody rb; // Ссылка на Rigidbody
     private bool isJumping = false; // Флаг, указывающий, происходит ли в данный момент толчок
-
     private int _currentPushCount = 0;
-
     private StartSequence _startSequence;
-
-
     private bool isRelease = false;
     private bool isAllowed = true;
+    
+    enum State
+    {
+        Idle,
+        Pushing,
+        Releasing,
+        Flying
+    }
+    private State currentState = State.Pushing;
 
     void Start()
     {
@@ -39,6 +42,44 @@ public class StartSequence : MonoBehaviour
     }
 
     void Update()
+    {
+        switch (currentState)
+        {
+            case State.Idle:
+                
+                break;
+
+            case State.Pushing:
+                PushingHandleInput();
+                break;
+
+            case State.Releasing:
+                
+                break;
+            case State.Flying:
+                
+                break;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (isJumping)
+        {
+            // Добавляем силу вправо по оси x
+            rb.AddRelativeForce(Vector3.right * pushForce, ForceMode.Impulse);
+            isJumping = false;
+            if (isRelease)
+            {
+                isAllowed = false;
+                _currentPushCount = 0;
+                isRelease = false;
+                StartCoroutine(ReleaseAfterPush());
+            }
+        }
+    }
+
+    private void PushingHandleInput()
     {
         _currentTimeBetween += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space) && isAllowed)
@@ -82,24 +123,6 @@ public class StartSequence : MonoBehaviour
             }
         }
     }
-
-    void FixedUpdate()
-    {
-        if (isJumping)
-        {
-            // Добавляем силу вправо по оси x
-            rb.AddRelativeForce(Vector3.right * pushForce, ForceMode.Impulse);
-            isJumping = false;
-            if (isRelease)
-            {
-                isAllowed = false;
-                _currentPushCount = 0;
-                isRelease = false;
-                StartCoroutine(ReleaseAfterPush());
-            }
-        }
-    }
-
     private IEnumerator ReleaseAfterPush()
     {
         yield return new WaitForSeconds(0.3f);
