@@ -5,25 +5,29 @@ using UnityEngine;
 public class StartSequence : MonoBehaviour
 {
     [SerializeField] private PushSignal _pushSignal;
-    public float pushForce = 0.1f;   // Сила толчка по оси x
-    public float returnForce = 0.05f;  // Сила возврата в исходное положение по оси x
-
-    private Rigidbody rb;           // Ссылка на Rigidbody
-    private bool isJumping = false; // Флаг, указывающий, происходит ли в данный момент толчок
-    private Vector3 initialPosition; // Начальная позиция тела
+    [SerializeField] private PlayerSwitchViews _playerSwitchViews;
+    [SerializeField] private PlayerManager _playerManager;
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
     public GameObject PLayerArmature;
-    public int maxPushCount = 20;
-    private int _currentPushCount = 0;
-    [SerializeField] private PlayerSwitchViews _playerSwitchViews;
-    [SerializeField] private PlayerManager _playerManager;
 
-    private StartSequence _startSequence;
+    public float pushForce = 0.1f; // Сила толчка по оси x
+    public float returnForce = 0.05f; // Сила возврата в исходное положение по оси x
+
+
+    public int maxPushCount = 20;
 
     public float _currentTimeBetween = 0f;
     public float _timeBetweenMin = 0.4f;
     public float _timeBetweenMax = 1f;
+
+    private Rigidbody rb; // Ссылка на Rigidbody
+    private bool isJumping = false; // Флаг, указывающий, происходит ли в данный момент толчок
+
+    private int _currentPushCount = 0;
+
+    private StartSequence _startSequence;
+
 
     private bool isRelease = false;
     private bool isAllowed = true;
@@ -31,7 +35,6 @@ public class StartSequence : MonoBehaviour
     void Start()
     {
         rb = AnchorRb;
-        initialPosition = anchorTransform.position;
         _startSequence = gameObject.GetComponent<StartSequence>();
     }
 
@@ -68,11 +71,9 @@ public class StartSequence : MonoBehaviour
             }
             else
             {
-                
                 pushForce = 4.5f;
                 isRelease = true;
                 //Debug.Log("here");
-
             }
 
             if (_currentTimeBetween > _timeBetweenMax)
@@ -80,7 +81,6 @@ public class StartSequence : MonoBehaviour
                 pushForce = 0.1f;
             }
         }
-        
     }
 
     void FixedUpdate()
@@ -98,17 +98,15 @@ public class StartSequence : MonoBehaviour
                 StartCoroutine(ReleaseAfterPush());
             }
         }
-
-        
     }
 
     private IEnumerator ReleaseAfterPush()
     {
         yield return new WaitForSeconds(0.3f);
         PLayerArmature.transform.parent = null;
-        _startSequence.enabled = false;
         _playerSwitchViews.EndStartSequence();
+        _playerManager.StartDissolve(false);
         _playerManager.EnablePlayer();
+        _startSequence.enabled = false;
     }
-    
 }

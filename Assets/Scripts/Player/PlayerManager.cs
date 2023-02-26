@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
@@ -11,6 +12,12 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private ThirdPersonController _personController;
     [SerializeField] private PlayerInput _playerInput;
+    
+    //Dissolve
+    [SerializeField] private Material _currentMat;
+    [SerializeField] private float _dissolveTime = 0.2f;
+    private Coroutine _dissolveCoroutine;
+    
 
     public void EnablePlayer()
     {
@@ -20,4 +27,40 @@ public class PlayerManager : MonoBehaviour
         _playerInput.enabled = true;
     }
 
+    private void Start()
+    {
+        // Убедитесь, что материал имеет параметр _Dissolve
+        if (!_currentMat.HasProperty("_Dissolve"))
+        {
+            Debug.LogError("Material does not have Dissolve property!");
+            enabled = false;
+            return;
+        }
+        _currentMat.SetFloat("_Dissolve", 0f);
+        
+    }
+    public void StartDissolve(bool dissolveIn)
+    {
+        if (_dissolveCoroutine != null)
+            StopCoroutine(_dissolveCoroutine);
+
+        float startValue = _currentMat.GetFloat("_Dissolve");
+        float endValue = dissolveIn ? 0 : 1;
+        _dissolveCoroutine = StartCoroutine(DissolveCoroutine(startValue, endValue));
+    }
+    
+    private IEnumerator DissolveCoroutine(float startValue, float endValue)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < _dissolveTime)
+        {
+            float t = elapsedTime / _dissolveTime;
+            float value = Mathf.Lerp(startValue, endValue, t);
+            _currentMat.SetFloat("_Dissolve", value);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        _currentMat.SetFloat("_Dissolve", endValue);
+    }
 }
