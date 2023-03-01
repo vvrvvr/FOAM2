@@ -7,6 +7,9 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private PushSignal _pushSignal;
     [SerializeField] private PlayerSwitchViews _playerSwitchViews;
     [SerializeField] private PlayerManager _playerManager;
+    [SerializeField] private PornoBannerManager _pornoBannerManager;
+    [SerializeField] private PornoFiguresManager _pornoFiguresManager;
+    
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
     public GameObject PLayerArmature;
@@ -33,7 +36,7 @@ public class StartSequence : MonoBehaviour
         Releasing,
         Flying
     }
-    private State currentState = State.Pushing;
+    private State currentState = State.Idle;
 
     void Start()
     {
@@ -46,7 +49,8 @@ public class StartSequence : MonoBehaviour
         switch (currentState)
         {
             case State.Idle:
-                
+                _pornoBannerManager.BannersAppear();
+                currentState = State.Pushing;
                 break;
 
             case State.Pushing:
@@ -84,8 +88,12 @@ public class StartSequence : MonoBehaviour
         _currentTimeBetween += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space) && isAllowed)
         {
+            _pornoFiguresManager.StartAnimations();
+            _pornoBannerManager.RemoveRandomBanner();
+            
             _currentPushCount++;
             isJumping = true;
+            
             if (_currentPushCount < maxPushCount)
             {
                 if (pushForce < 1 && _currentTimeBetween > _timeBetweenMin && _currentTimeBetween < _timeBetweenMax)
@@ -106,21 +114,25 @@ public class StartSequence : MonoBehaviour
                 if (_currentTimeBetween > _timeBetweenMax)
                 {
                     pushForce = 0.1f;
+                    //_pornoFiguresManager.StopAnimations();
                 }
 
                 _currentTimeBetween = 0f;
             }
             else
             {
-                pushForce = 4.5f;
+                pushForce = 5f;
                 isRelease = true;
                 //Debug.Log("here");
             }
 
-            if (_currentTimeBetween > _timeBetweenMax)
-            {
-                pushForce = 0.1f;
-            }
+            
+        }
+        if (_currentTimeBetween > _timeBetweenMax)
+        {
+            
+            pushForce = 0.1f;
+            _pornoFiguresManager.StopAnimations();
         }
     }
     private IEnumerator ReleaseAfterPush()
@@ -128,6 +140,8 @@ public class StartSequence : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         PLayerArmature.transform.parent = null;
         _playerSwitchViews.EndStartSequence();
+        _pornoBannerManager.TurnOffBanners();
+        _pornoFiguresManager.StopAnimations();
         _playerManager.StartDissolve(false);
         _playerManager.EnablePlayer();
         _startSequence.enabled = false;

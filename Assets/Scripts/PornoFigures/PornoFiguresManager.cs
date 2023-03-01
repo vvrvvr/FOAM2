@@ -13,17 +13,17 @@ public class PornoFiguresManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            StartAnimations();
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            StopAnimations();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.H))
+    //     {
+    //         StartAnimations();
+    //     }
+    //     if (Input.GetKeyDown(KeyCode.J))
+    //     {
+    //         StopAnimations();
+    //     }
+    // }
 
 
     public void StartAnimations()
