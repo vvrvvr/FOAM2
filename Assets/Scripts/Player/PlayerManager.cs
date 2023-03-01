@@ -17,7 +17,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Material _currentMat;
     [SerializeField] private float _dissolveTime = 0.2f;
     private Coroutine _dissolveCoroutine;
-    
+
 
     public void EnablePlayer()
     {
