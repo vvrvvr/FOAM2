@@ -12,7 +12,7 @@ public class PushSignal : MonoBehaviour
         if (other.gameObject.name == "PlayerCube")
         {
             isTouched = true;
-            Debug.Log("touched");
+            //Debug.Log("touched");
         }
     }
 }
