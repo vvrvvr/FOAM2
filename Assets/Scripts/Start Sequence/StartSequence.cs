@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class StartSequence : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private PlayerManager _playerManager;
     [SerializeField] private PornoBannerManager _pornoBannerManager;
     [SerializeField] private PornoFiguresManager _pornoFiguresManager;
+    [SerializeField] private GameObject flyingCamGameObject;
+    [SerializeField] private CinemachineVirtualCamera _FlyingCam;
+    [SerializeField] private float _flyingCamSpeed = 1;
     
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
@@ -28,27 +33,32 @@ public class StartSequence : MonoBehaviour
     private StartSequence _startSequence;
     private bool isRelease = false;
     private bool isAllowed = true;
+    private Coroutine _waitFlyingCam;
+    private CinemachineTrackedDolly trackedDolly;
+    private float newPathPosition = 0f;
+    
     
     enum State
     {
-        Idle,
+        Start,
         Pushing,
         Releasing,
         Flying
     }
-    private State currentState = State.Idle;
+    private State currentState = State.Flying;
 
     void Start()
     {
         rb = AnchorRb;
         _startSequence = gameObject.GetComponent<StartSequence>();
+        trackedDolly = _FlyingCam.GetCinemachineComponent<CinemachineTrackedDolly>();
     }
 
     void Update()
     {
         switch (currentState)
         {
-            case State.Idle:
+            case State.Start:
                 _pornoBannerManager.BannersAppear();
                 currentState = State.Pushing;
                 break;
@@ -61,7 +71,7 @@ public class StartSequence : MonoBehaviour
                 
                 break;
             case State.Flying:
-                
+                FlyingHandleInput();
                 break;
         }
     }
@@ -135,6 +145,17 @@ public class StartSequence : MonoBehaviour
             _pornoFiguresManager.StopAnimations();
         }
     }
+
+    private void FlyingHandleInput()
+    {
+        newPathPosition += Time.deltaTime * _flyingCamSpeed;
+        trackedDolly.m_PathPosition = newPathPosition;
+        if (Input.GetKeyDown(KeyCode.Space) && _waitFlyingCam == null )
+        {
+            _playerSwitchViews.StartStartSequence();
+            _waitFlyingCam = StartCoroutine(WaitForFlyingCam());
+        }
+    }
     private IEnumerator ReleaseAfterPush()
     {
         yield return new WaitForSeconds(0.3f);
@@ -145,5 +166,12 @@ public class StartSequence : MonoBehaviour
         _playerManager.StartDissolve(false);
         _playerManager.EnablePlayer();
         _startSequence.enabled = false;
+    }
+
+    private IEnumerator WaitForFlyingCam()
+    {
+        yield return new WaitForSeconds(1.1f);
+        currentState = State.Start;
+        flyingCamGameObject.SetActive(false);
     }
 }

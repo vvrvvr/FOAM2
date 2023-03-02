@@ -38,23 +38,23 @@ public class PlayerSwitchViews : MonoBehaviour
         Debug.Log("turn off");
     }
 
-    void Update()
-    {
-        SwitchView();
-    }
-    
-    void SwitchView()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            StartStartSequence();
-        }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            EndStartSequence();
-        }
-       
-    }
+    // void Update()
+    // {
+    //     SwitchView();
+    // }
+    //
+    // void SwitchView()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.F))
+    //     {
+    //         StartStartSequence();
+    //     }
+    //     if (Input.GetKeyDown(KeyCode.G))
+    //     {
+    //         EndStartSequence();
+    //     }
+    //    
+    // }
 
     public void StartStartSequence()
     {
@@ -65,5 +65,7 @@ public class PlayerSwitchViews : MonoBehaviour
     {
         CameraSwitcher.SwitchCamera(firstPersonCam);
     }
+    
+    
     
 }
