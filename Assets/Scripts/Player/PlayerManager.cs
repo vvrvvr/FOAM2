@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Material _currentMat;
     [SerializeField] private float _dissolveTime = 0.2f;
     private Coroutine _dissolveCoroutine;
+    public bool isVisible = false;
 
 
     public void EnablePlayer()
@@ -36,8 +37,16 @@ public class PlayerManager : MonoBehaviour
             enabled = false;
             return;
         }
-        _currentMat.SetFloat("_Dissolve", 0f);
-        
+
+        if (isVisible)
+        {
+            _currentMat.SetFloat("_Dissolve", 0f);
+        }
+        else
+        {
+            _currentMat.SetFloat("_Dissolve", 1f);
+        }
+
     }
     public void StartDissolve(bool dissolveIn)
     {
