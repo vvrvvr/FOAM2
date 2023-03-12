@@ -21,6 +21,7 @@ public class StartSequence : MonoBehaviour
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
     public GameObject PLayerArmature;
+    public Transform PLayerPlace;
 
     public float pushForce = 0.1f; // Сила толчка по оси x
     public float returnForce = 0.05f; // Сила возврата в исходное положение по оси x
@@ -55,6 +56,13 @@ public class StartSequence : MonoBehaviour
         rb = AnchorRb;
         _startSequence = gameObject.GetComponent<StartSequence>();
         trackedDolly = _FlyingCam.GetCinemachineComponent<CinemachineTrackedDolly>();
+        
+        _playerManager.DisablePlayer();
+        PLayerArmature.transform.position = PLayerPlace.position;
+        PLayerArmature.transform.rotation = PLayerPlace.rotation;
+        PLayerArmature.transform.parent = PLayerPlace;
+        logo.SetActive(true);
+
     }
 
     void Update()

@@ -34,7 +34,7 @@ public class PlayerSwitchViews : MonoBehaviour
     void Start()
     {
         _playerController = ThirdPersonController.Instance;
-        _playerController.enabled = false;
+        //_playerController.enabled = false;
        // Debug.Log("turn off");
     }
 

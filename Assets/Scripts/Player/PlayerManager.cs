@@ -63,4 +63,11 @@ public class PlayerManager : MonoBehaviour
 
         _currentMat.SetFloat("_Dissolve", endValue);
     }
+    public void DisablePlayer()
+    {
+        _characterController.enabled = false;
+        _animator.enabled = false;
+        _personController.enabled = false;
+        _playerInput.enabled = false;
+    }
 }
