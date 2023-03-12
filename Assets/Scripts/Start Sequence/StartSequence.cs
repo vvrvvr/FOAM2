@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class StartSequence : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private GameObject flyingCamGameObject;
     [SerializeField] private CinemachineVirtualCamera _FlyingCam;
     [SerializeField] private float _flyingCamSpeed = 1;
+    [SerializeField] private GameObject logo;
     
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
@@ -152,7 +155,9 @@ public class StartSequence : MonoBehaviour
         trackedDolly.m_PathPosition = newPathPosition;
         if (Input.GetKeyDown(KeyCode.Space) && _waitFlyingCam == null )
         {
+            var imageLogo = logo.GetComponent<Image>();
             _playerSwitchViews.StartStartSequence();
+            imageLogo.DOFade(0, 1);
             _waitFlyingCam = StartCoroutine(WaitForFlyingCam());
         }
     }
@@ -173,5 +178,6 @@ public class StartSequence : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         currentState = State.Start;
         flyingCamGameObject.SetActive(false);
+        logo.SetActive(false);
     }
 }
