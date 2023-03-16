@@ -127,14 +127,15 @@ Material:
     - _Saturation: -4.29
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _Smothness: 0.5
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _TimeMultiplier: 1
-    - _VoronoiNoiseMultiplier: 2
-    - _VoronoiWaveScale: 3.14
+    - _VoronoiNoiseMultiplier: 1
+    - _VoronoiWaveScale: 0.57
     - _WaveScale: 0.3
-    - _WaveScale2: 0.16
+    - _WaveScale2: 10
     - _WaveSpeed: 0.01
     - _WorkflowMode: 1
     - _ZWrite: 1

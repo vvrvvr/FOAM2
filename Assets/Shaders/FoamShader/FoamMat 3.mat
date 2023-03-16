@@ -115,7 +115,7 @@ Material:
     - _GraientNoise: 1
     - _Metallic: 0
     - _Modulo: 1
-    - _NormalMapHeight: 0.02
+    - _NormalMapHeight: 0.69
     - _Normal_Map: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -127,6 +127,7 @@ Material:
     - _Saturation: -4.29
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
+    - _Smothness: 0.576
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
