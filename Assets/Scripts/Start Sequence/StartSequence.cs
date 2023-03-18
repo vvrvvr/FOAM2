@@ -17,6 +17,7 @@ public class StartSequence : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera _FlyingCam;
     [SerializeField] private float _flyingCamSpeed = 1;
     [SerializeField] private GameObject logo;
+    [SerializeField] private GameObject playerAnchor;
     
     public Transform anchorTransform;
     public Rigidbody AnchorRb;
@@ -179,6 +180,7 @@ public class StartSequence : MonoBehaviour
         _playerManager.StartDissolve(false);
         _playerManager.EnablePlayer();
         _startSequence.enabled = false;
+        playerAnchor.SetActive(false);
     }
 
     private IEnumerator WaitForFlyingCam()
