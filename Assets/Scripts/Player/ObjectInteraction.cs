@@ -35,18 +35,12 @@ public class ObjectInteraction : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 fwd = _camera.transform.TransformDirection(Vector3.forward);
-        
+
         if (heldObject != null && Input.GetMouseButtonDown(0)) //drop object
         {
-            var objectRb = heldObject.GetComponent<Rigidbody>();
-            objectRb.isKinematic = false;
+            heldObject.GetComponent<InterfaceObject>().isDropped(heldObjectLocalPosition.forward * impulseForce);
+            
             heldObject.transform.parent = null;
-            objectRb.AddForce(heldObjectLocalPosition.forward * impulseForce, ForceMode.Impulse);
-            
-            var interfaceObj  = heldObject.GetComponent<InterfaceObject>();
-            if (interfaceObj != null)
-                interfaceObj.SetDefaultScale();
-            
             heldObject = null;
             _characterController.radius = defaultCharacterRadius;
             cursor.SetActive(true);
@@ -55,16 +49,11 @@ public class ObjectInteraction : MonoBehaviour
                  Physics.Raycast(_camera.transform.position, fwd, out hit, grabDistance, layerMaskInteract.value))
         {
             pointerImage.sprite = hand;
-            if (Input.GetMouseButtonDown(0))//take object
+            if (Input.GetMouseButtonDown(0)) //take object
             {
                 heldObject = hit.collider.gameObject;
-                var objectRb = heldObject.GetComponent<Rigidbody>();
-                
-                var interfaceObj  = heldObject.GetComponent<InterfaceObject>();
-                if (interfaceObj != null)
-                    interfaceObj.SetInHandScale();
-                
-                objectRb.isKinematic = true;
+                heldObject.GetComponent<InterfaceObject>().IsTaken();
+
                 heldObject.transform.parent = heldObjectLocalPosition;
                 heldObject.transform.localPosition = Vector3.zero;
                 _characterController.radius = 1f;

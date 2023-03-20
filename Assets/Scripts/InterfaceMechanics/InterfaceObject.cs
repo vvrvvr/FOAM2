@@ -1,8 +1,5 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using DG.Tweening;
 
 public class InterfaceObject : MonoBehaviour
@@ -14,12 +11,47 @@ public class InterfaceObject : MonoBehaviour
     private bool isScaling = false;
     private bool isRotating = false;
     private Coroutine rotateCoroutine;
+    private Coroutine returnToScreenCoroutine;
+    private Rigidbody rb;
+
+    private bool _isDropped = false;
+    private Vector3 dropDir = Vector3.zero;
+
+    private Vector3 onScreenPosition;
+    private Quaternion onScreenRotation;
 
     private void Start()
     {
         originalScale = transform.localScale;
+        rb = GetComponent<Rigidbody>();
+        var transform1 = transform;
+        onScreenPosition = transform1.position;
+        onScreenRotation = transform1.rotation;
     }
 
+    // public void SetLinkToManager(mInterfaceManager manager)
+    // {
+    //     _mInterfaceManager = manager;
+    // }
+
+    public void IsTaken()
+    {
+        rb.isKinematic = true;
+        _isDropped = false;
+        SetInHandScale();
+        if (returnToScreenCoroutine != null)
+            StopCoroutine(returnToScreenCoroutine);
+    }
+
+    public void isDropped(Vector3 dropDirection)
+    {
+        rb.isKinematic = false;
+        SetDefaultScale();
+        dropDir = dropDirection;
+        _isDropped = true;
+        rb.AddForce(dropDirection, ForceMode.Impulse);
+        returnToScreenCoroutine = StartCoroutine(ReturnToScreen(4f));
+    }
 
     public void SetInHandScale()
     {
@@ -41,13 +73,25 @@ public class InterfaceObject : MonoBehaviour
             originalScale.z / targetScale);
         transform.DOScale(target, time).OnComplete(() => { isScaling = false; });
     }
-    
-    IEnumerator RotateOverTime(float speed) {
-        
-        while (isRotating) { 
-            Debug.Log("rotating");
-            transform.Rotate(new Vector3(rotationSpeed, rotationSpeed, rotationSpeed) * Time.deltaTime); 
+
+    IEnumerator RotateOverTime(float speed)
+    {
+        while (isRotating)
+        {
+            //Debug.Log("rotating");
+            transform.Rotate(new Vector3(rotationSpeed, rotationSpeed, rotationSpeed) * Time.deltaTime);
             yield return null; // Ждем один кадр
+        }
+    }
+
+    IEnumerator ReturnToScreen(float time)
+    {
+        yield return new WaitForSeconds(time);
+        if (_isDropped)
+        {
+            rb.isKinematic = true;
+            transform.DOMove(onScreenPosition, 0.2f);
+            transform.DORotateQuaternion(onScreenRotation, 1f);
         }
     }
 }
