@@ -13,8 +13,10 @@ public class InterfaceObject : MonoBehaviour
     private Coroutine rotateCoroutine;
     private Coroutine returnToScreenCoroutine;
     private Rigidbody rb;
+    private mInterfaceManager _mInterfaceManager;
 
     private bool _isDropped = false;
+    public bool isOnscreen = true;
     private Vector3 dropDir = Vector3.zero;
 
     private Vector3 onScreenPosition;
@@ -29,14 +31,16 @@ public class InterfaceObject : MonoBehaviour
         onScreenRotation = transform1.rotation;
     }
 
-    // public void SetLinkToManager(mInterfaceManager manager)
-    // {
-    //     _mInterfaceManager = manager;
-    // }
+    public void SetLinkToManager(mInterfaceManager manager)
+    {
+        _mInterfaceManager = manager;
+    }
 
     public void IsTaken()
     {
         rb.isKinematic = true;
+         isOnscreen = false;
+         _mInterfaceManager.CheckInterfaceFree();
         _isDropped = false;
         SetInHandScale();
         if (returnToScreenCoroutine != null)
@@ -90,7 +94,7 @@ public class InterfaceObject : MonoBehaviour
         if (_isDropped)
         {
             rb.isKinematic = true;
-            transform.DOMove(onScreenPosition, 0.2f);
+            transform.DOMove(onScreenPosition, 0.2f).OnComplete(() => { isOnscreen = true; _mInterfaceManager.CheckInterfaceFree(); });
             transform.DORotateQuaternion(onScreenRotation, 1f);
         }
     }

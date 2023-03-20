@@ -1,19 +1,24 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+using System.Collections.ObjectModel;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class mInterfaceManager : MonoBehaviour
 {
     [SerializeField] private PlayerManager _playerManager;
     [SerializeField] private GameObject playerMesh;
     [SerializeField] private LookAtObject lookAtObject;
-    
+    [SerializeField] private List<InterfaceObject> interfaceList = new List<InterfaceObject>();
+    public bool isInterfaceFree = false;
+
 
     private void Start()
     {
         lookAtObject.enabled = false;
+        foreach (var obj in interfaceList)
+        {
+            obj.SetLinkToManager(this);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,5 +50,19 @@ public class mInterfaceManager : MonoBehaviour
     {
         playerMesh.layer = 0;
         _playerManager.StartDissolve(false);
+    }
+
+    public void CheckInterfaceFree()
+    {
+        foreach (var obj in interfaceList)
+        {
+            if (obj.isOnscreen == false)
+            {
+                isInterfaceFree = true;
+                return;
+            }
+        }
+
+        isInterfaceFree = false;
     }
 }
