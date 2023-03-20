@@ -12,6 +12,8 @@ public class ObjectInteraction : MonoBehaviour
     [SerializeField] private LayerMask layerMaskInteract;
     [SerializeField] private Transform heldObjectLocalPosition;
     [SerializeField] private float impulseForce = 1f;
+    private float defaultCharacterRadius;
+    private CharacterController _characterController;
 
     private Camera _camera;
 
@@ -23,6 +25,8 @@ public class ObjectInteraction : MonoBehaviour
     private void Start()
     {
         _camera = Camera.main;
+        _characterController = GetComponent<CharacterController>();
+        defaultCharacterRadius = _characterController.radius;
     }
 
     void Update()
@@ -42,6 +46,7 @@ public class ObjectInteraction : MonoBehaviour
                 interfaceObj.SetDefaultScale();
             
             heldObject = null;
+            _characterController.radius = defaultCharacterRadius;
         }
         else if (heldObject == null &&
                  Physics.Raycast(_camera.transform.position, fwd, out hit, grabDistance, layerMaskInteract.value))
@@ -59,6 +64,7 @@ public class ObjectInteraction : MonoBehaviour
                 objectRb.isKinematic = true;
                 heldObject.transform.parent = heldObjectLocalPosition;
                 heldObject.transform.localPosition = Vector3.zero;
+                _characterController.radius = 1f;
             }
         }
         else
