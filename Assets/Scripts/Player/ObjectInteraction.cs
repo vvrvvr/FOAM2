@@ -12,6 +12,7 @@ public class ObjectInteraction : MonoBehaviour
     [SerializeField] private LayerMask layerMaskInteract;
     [SerializeField] private Transform heldObjectLocalPosition;
     [SerializeField] private float impulseForce = 1f;
+    [SerializeField] private GameObject cursor;
     private float defaultCharacterRadius;
     private CharacterController _characterController;
 
@@ -27,6 +28,7 @@ public class ObjectInteraction : MonoBehaviour
         _camera = Camera.main;
         _characterController = GetComponent<CharacterController>();
         defaultCharacterRadius = _characterController.radius;
+        cursor.SetActive(true);
     }
 
     void Update()
@@ -47,6 +49,7 @@ public class ObjectInteraction : MonoBehaviour
             
             heldObject = null;
             _characterController.radius = defaultCharacterRadius;
+            cursor.SetActive(true);
         }
         else if (heldObject == null &&
                  Physics.Raycast(_camera.transform.position, fwd, out hit, grabDistance, layerMaskInteract.value))
@@ -65,6 +68,7 @@ public class ObjectInteraction : MonoBehaviour
                 heldObject.transform.parent = heldObjectLocalPosition;
                 heldObject.transform.localPosition = Vector3.zero;
                 _characterController.radius = 1f;
+                cursor.SetActive(false);
             }
         }
         else
