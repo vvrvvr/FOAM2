@@ -39,7 +39,7 @@ public class ObjectInteraction : MonoBehaviour
         if (heldObject != null && Input.GetMouseButtonDown(0)) //drop object
         {
             heldObject.transform.parent = null;
-            heldObject.GetComponent<InterfaceObject>().isDropped(heldObjectLocalPosition.forward * impulseForce, 1);
+            heldObject.GetComponent<InterfaceObject>().isDropped(heldObjectLocalPosition.forward * impulseForce, 1, 4f);
             heldObject = null;
             _characterController.radius = defaultCharacterRadius;
             cursor.SetActive(true);

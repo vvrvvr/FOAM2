@@ -64,7 +64,7 @@ public class AlchemyDeskSlot : MonoBehaviour
 
     public void RejectMerge()
     {
-        currentInterface.isDropped(_dir, 5f); 
+        currentInterface.isDropped(_dir, 5f, 7f); 
         currentInterface.SetInterfaceLayer(15);
         currentInterface = null;
         InterfaceTypeInSlot = 0;
@@ -73,11 +73,10 @@ public class AlchemyDeskSlot : MonoBehaviour
 
     public void ApplyMerge()
     {
-        // удалять из списка менеджера интерфейсов, удалять объект
-        
-        // currentInterface = null;
-        // InterfaceTypeInSlot = 0;
-        // isSlotBusy = false;
+        currentInterface.DeleteInterface();
+        currentInterface = null;
+        InterfaceTypeInSlot = 0;
+        isSlotBusy = false;
     }
     public Vector3 ConvertToDirection()
     {
