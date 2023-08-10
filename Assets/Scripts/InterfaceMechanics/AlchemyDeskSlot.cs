@@ -7,6 +7,7 @@ public class AlchemyDeskSlot : MonoBehaviour
     [SerializeField] private GameObject outline;
     [SerializeField] private Transform itemPlace;
     [SerializeField] private mInterfaceManager interfaceManager;
+    [SerializeField] private Transform dropDirection;
     //[SerializeField] private ObjectInteraction objectInteraction;
     public int InterfaceTypeInSlot = 0;
     private InterfaceObject currentInterface = null;
@@ -15,9 +16,12 @@ public class AlchemyDeskSlot : MonoBehaviour
         
 
     public bool isSlotBusy = false;
+    private Vector3 _dir;
 
     void Start()
     {
+        dropDirection.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        _dir = ConvertToDirection();
         outline.SetActive(false);
     }
 
@@ -60,7 +64,7 @@ public class AlchemyDeskSlot : MonoBehaviour
 
     public void RejectMerge()
     {
-        currentInterface.isDropped(Vector3.left, 15f); //поправить направление
+        currentInterface.isDropped(_dir, 5f); 
         currentInterface.SetInterfaceLayer(15);
         currentInterface = null;
         InterfaceTypeInSlot = 0;
@@ -74,6 +78,19 @@ public class AlchemyDeskSlot : MonoBehaviour
         // currentInterface = null;
         // InterfaceTypeInSlot = 0;
         // isSlotBusy = false;
+    }
+    public Vector3 ConvertToDirection()
+    {
+        if (dropDirection != null)
+        {
+            Vector3 direction = dropDirection.position - transform.position;
+            return direction.normalized;
+        }
+        else
+        {
+            Debug.LogWarning("Drop direction is not assigned!");
+            return Vector3.zero;
+        }
     }
     
     IEnumerator WaitToMerge(float time)
