@@ -59,10 +59,20 @@ public class mInterfaceManager : MonoBehaviour
             if (obj.isOnscreen == false)
             {
                 isInterfaceFree = true;
+               // EventManager.OnItemHeld.Invoke();
                 return;
             }
         }
 
         isInterfaceFree = false;
+        //EventManager.OnItemDroped.Invoke();
+    }
+    public void RemoveFromList(InterfaceObject obj)
+    {
+        if (interfaceList.Contains(obj))
+        {
+            interfaceList.Remove(obj);
+            CheckInterfaceFree();
+        }
     }
 }

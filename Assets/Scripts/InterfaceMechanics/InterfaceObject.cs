@@ -11,7 +11,7 @@ public class InterfaceObject : MonoBehaviour
     private bool isScaling = false;
     private bool isRotating = false;
     private Coroutine rotateCoroutine;
-    private Coroutine returnToScreenCoroutine;
+    private Coroutine MoveToCoroutine;
     private Rigidbody rb;
     private mInterfaceManager _mInterfaceManager;
 
@@ -19,16 +19,28 @@ public class InterfaceObject : MonoBehaviour
     public bool isOnscreen = true;
     private Vector3 dropDir = Vector3.zero;
 
-    private Vector3 onScreenPosition;
-    private Quaternion onScreenRotation;
+    public int interfaceType = 1;
+    [SerializeField] private bool isType1 = true;
+    
+    [SerializeField]private Vector3 onScreenPosition;
+    [SerializeField]private Quaternion onScreenRotation;
+    public Transform _parentObj;
+    public bool CanTake = true;
+    
+    
 
     private void Start()
     {
         originalScale = transform.localScale;
         rb = GetComponent<Rigidbody>();
         var transform1 = transform;
-        onScreenPosition = transform1.position;
-        onScreenRotation = transform1.rotation;
+        if (isType1)
+        {
+            onScreenPosition = transform1.position;
+            onScreenRotation = transform1.rotation;
+        }
+        if (transform.parent != null)
+            _parentObj = transform.parent;
     }
 
     public void SetLinkToManager(mInterfaceManager manager)
@@ -42,22 +54,25 @@ public class InterfaceObject : MonoBehaviour
          isOnscreen = false;
          _mInterfaceManager.CheckInterfaceFree();
         _isDropped = false;
-        SetInHandScale();
-        if (returnToScreenCoroutine != null)
-            StopCoroutine(returnToScreenCoroutine);
+        SetInHandScale(targetScale, scaleTime, rotationSpeed);
+        if (MoveToCoroutine != null)
+            StopCoroutine(MoveToCoroutine);
     }
 
-    public void isDropped(Vector3 dropDirection)
+    public void isDropped(Vector3 dropDirection, float dropforce)
     {
+        EventManager.OnItemDroped.Invoke();
         rb.isKinematic = false;
         SetDefaultScale();
         dropDir = dropDirection;
         _isDropped = true;
-        rb.AddForce(dropDirection, ForceMode.Impulse);
-        returnToScreenCoroutine = StartCoroutine(ReturnToScreen(4f));
+        rb.AddForce(dropDirection *dropforce, ForceMode.Impulse);
+        MoveToCoroutine = StartCoroutine(MoveAndRotateTo(4f, 0.2f, onScreenPosition, onScreenRotation));
+        SetParentObj(_parentObj);
+        
     }
 
-    public void SetInHandScale()
+    public void SetInHandScale(float targetScale, float scaleTime, float rotationSpeed)
     {
         ScaleOverTime(targetScale, scaleTime);
         isRotating = true;
@@ -68,7 +83,8 @@ public class InterfaceObject : MonoBehaviour
     {
         transform.DOScale(originalScale, scaleTime).OnComplete(() => { isScaling = false; });
         isRotating = false;
-        StopCoroutine(rotateCoroutine);
+        if(rotateCoroutine != null)
+            StopCoroutine(rotateCoroutine);
     }
 
     private void ScaleOverTime(float targetScale, float time)
@@ -87,15 +103,43 @@ public class InterfaceObject : MonoBehaviour
             yield return null; // Ждем один кадр
         }
     }
+    
+    public void SetParentObj( Transform parent)
+    {
+        if (_parentObj != null)
+            gameObject.transform.parent = parent;
+        else
+            Debug.LogWarning("Ранее кешированный родительский объект отсутствует");
+    }
 
-    IEnumerator ReturnToScreen(float time)
+    IEnumerator MoveAndRotateTo(float time, float speed, Vector3 position, Quaternion rotation)
     {
         yield return new WaitForSeconds(time);
         if (_isDropped)
         {
+            CanTake = false;
             rb.isKinematic = true;
-            transform.DOMove(onScreenPosition, 0.2f).OnComplete(() => { isOnscreen = true; _mInterfaceManager.CheckInterfaceFree(); });
-            transform.DORotateQuaternion(onScreenRotation, 1f);
+            transform.DOMove(position, speed).OnComplete(() => { isOnscreen = true; _mInterfaceManager.CheckInterfaceFree();
+                CanTake = true;
+            });
+            transform.DORotateQuaternion(rotation, 1f);
         }
     }
+    
+
+    public void MoveInterfaceToSlot(float time, float speed, Transform targetPosition)
+    {
+        StopCoroutine(MoveToCoroutine);
+        MoveToCoroutine = StartCoroutine(MoveAndRotateTo(time, speed, targetPosition.position, targetPosition.rotation));
+        // _mInterfaceManager.RemoveFromList(this);
+        // SetParentObj(targetPosition);
+        gameObject.layer = 0;
+    }
+
+    public void SetInterfaceLayer(int layer)
+    {
+        gameObject.layer = layer;
+    }
+    
+    
 }

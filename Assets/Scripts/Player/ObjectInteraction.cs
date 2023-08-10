@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ObjectInteraction : MonoBehaviour
 {
     public float pickupDistance = 10f;
-    private GameObject heldObject = null;
+    public GameObject heldObject = null;
     [SerializeField] private float grabDistance = 5f;
     [SerializeField] private LayerMask layerMaskInteract;
     [SerializeField] private Transform heldObjectLocalPosition;
@@ -38,9 +38,8 @@ public class ObjectInteraction : MonoBehaviour
 
         if (heldObject != null && Input.GetMouseButtonDown(0)) //drop object
         {
-            heldObject.GetComponent<InterfaceObject>().isDropped(heldObjectLocalPosition.forward * impulseForce);
-            
             heldObject.transform.parent = null;
+            heldObject.GetComponent<InterfaceObject>().isDropped(heldObjectLocalPosition.forward * impulseForce, 1);
             heldObject = null;
             _characterController.radius = defaultCharacterRadius;
             cursor.SetActive(true);
@@ -52,12 +51,16 @@ public class ObjectInteraction : MonoBehaviour
             if (Input.GetMouseButtonDown(0)) //take object
             {
                 heldObject = hit.collider.gameObject;
-                heldObject.GetComponent<InterfaceObject>().IsTaken();
-
-                heldObject.transform.parent = heldObjectLocalPosition;
-                heldObject.transform.localPosition = Vector3.zero;
-                _characterController.radius = 1f;
-                cursor.SetActive(false);
+                var heldObjectInterface = heldObject.GetComponent<InterfaceObject>();
+                if (heldObjectInterface.CanTake)
+                {
+                    heldObjectInterface.IsTaken();
+                    EventManager.OnItemHeld.Invoke();
+                    heldObject.transform.parent = heldObjectLocalPosition;
+                    heldObject.transform.localPosition = Vector3.zero;
+                    _characterController.radius = 1f;
+                    cursor.SetActive(false);
+                }
             }
         }
         else
