@@ -1,0 +1,1733 @@
+fileFormatVersion: 2
+guid: 4b439b3dad07d014bb1316b289099282
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -8117693742802737279
+    second: muscle_6|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -1995690320288135692
+    second: muscle_6|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 5432802308030568097
+    second: muscle_6|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1643034630946201381
+    second: muscle_6|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 4389181526071334442
+    second: muscle_6|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 9097558742500843751
+    second: muscle_6|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 3864846690020957965
+    second: muscle_6|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -5690005939669266420
+    second: muscle_6|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -5929186361213773706
+    second: muscle_6|lens|C4D Animation Take|Layer0
+  - first:
+      74: 5368324287475533424
+    second: muscle_6|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 3326913665411858460
+    second: muscle_6|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 6391202112865808140
+    second: muscle_6|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -6774713575342479243
+    second: muscle_6|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -2086974730561682035
+    second: muscle_6|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 8568509353708871466
+    second: muscle_6|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -3084093700463546282
+    second: muscle_6|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -5302422393651824885
+    second: muscle_6|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -4158589644313243338
+    second: muscle_6|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 6965739582004727268
+    second: muscle_6|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -3175573955364359912
+    second: muscle_6|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -8751898236159232454
+    second: muscle_6|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -1941044025969413912
+    second: muscle_6|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 6905785391839069398
+    second: muscle_6|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -7498798614714430959
+    second: muscle_5|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -2800211706226615000
+    second: muscle_5|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 1970273907072912602
+    second: muscle_5|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -6881443598810134510
+    second: muscle_5|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -985896713302401470
+    second: muscle_5|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 23722161113628719
+    second: muscle_5|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 8381651848844851697
+    second: muscle_5|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1837543097444109984
+    second: muscle_5|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -3114567022090351779
+    second: muscle_5|lens|C4D Animation Take|Layer0
+  - first:
+      74: -968258082610548099
+    second: muscle_5|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 7843698368936779225
+    second: muscle_5|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -7919314210585680854
+    second: muscle_5|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 7326899868598826024
+    second: muscle_5|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -2626252447023236092
+    second: muscle_5|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -1062714854987714058
+    second: muscle_5|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 187928249349121399
+    second: muscle_5|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 1140040341493592639
+    second: muscle_5|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 2936268691634289726
+    second: muscle_5|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 4724302296922357154
+    second: muscle_5|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -7962297567480525437
+    second: muscle_5|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 8415489792386676289
+    second: muscle_5|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -1153136962686863924
+    second: muscle_5|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 9073068287346415592
+    second: muscle_5|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 4149626965799482987
+    second: muscle_4|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -3664267825072593245
+    second: muscle_4|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2331201888313734514
+    second: muscle_4|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -1150868005537894075
+    second: muscle_4|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -1738739249070328432
+    second: muscle_4|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 7565892555170407601
+    second: muscle_4|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 6377736897523461164
+    second: muscle_4|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1346922403115233089
+    second: muscle_4|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -2149736322996013809
+    second: muscle_4|lens|C4D Animation Take|Layer0
+  - first:
+      74: 2334109028793269752
+    second: muscle_4|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -4416263745337298093
+    second: muscle_4|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 8702335782222743127
+    second: muscle_4|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 6322063479982848014
+    second: muscle_4|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 1493277437261018257
+    second: muscle_4|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 8122149313723132619
+    second: muscle_4|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -725511975199035687
+    second: muscle_4|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -2251545879440218608
+    second: muscle_4|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -864788739460908625
+    second: muscle_4|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 2315871169839911284
+    second: muscle_4|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -1908565446565306338
+    second: muscle_4|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 418412471195319814
+    second: muscle_4|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 1948055299265037912
+    second: muscle_4|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -5693506073642665330
+    second: muscle_4|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -3856266045269693511
+    second: muscle_3|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 2100775139106098802
+    second: muscle_3|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 3722126271292452388
+    second: muscle_3|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 2867038122713654512
+    second: muscle_3|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -5840485749921682392
+    second: muscle_3|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -4066132196786341349
+    second: muscle_3|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -5708283608911560782
+    second: muscle_3|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 7631029389497137887
+    second: muscle_3|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 6514595821652728534
+    second: muscle_3|lens|C4D Animation Take|Layer0
+  - first:
+      74: -3558939842877300188
+    second: muscle_3|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 4981735732500518996
+    second: muscle_3|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 8294472300520938978
+    second: muscle_3|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 334268646635358462
+    second: muscle_3|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 5303424798098706122
+    second: muscle_3|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 3104946142385876029
+    second: muscle_3|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 1386513918210509593
+    second: muscle_3|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 5164235286871073160
+    second: muscle_3|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -1233821739513421931
+    second: muscle_3|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -2165212927508530531
+    second: muscle_3|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 1615738705145127315
+    second: muscle_3|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 7498640533357820510
+    second: muscle_3|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 8243693791081050737
+    second: muscle_3|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -138507504425076018
+    second: muscle_3|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 3637530297056412618
+    second: muscle_1|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -7504005829788881298
+    second: muscle_1|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1217814910323966767
+    second: muscle_1|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -4243733294898164409
+    second: muscle_1|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 4231240443235092827
+    second: muscle_1|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -1945239351327451235
+    second: muscle_1|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2995831271803277674
+    second: muscle_1|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 2037458623414096798
+    second: muscle_1|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 4370205405987091506
+    second: muscle_1|lens|C4D Animation Take|Layer0
+  - first:
+      74: -3511048864181032874
+    second: muscle_1|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -6598231195340061685
+    second: muscle_1|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 8399256129489000915
+    second: muscle_1|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -3634289437453103026
+    second: muscle_1|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -7922631659821349781
+    second: muscle_1|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -674291629532256406
+    second: muscle_1|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 823608950515443648
+    second: muscle_1|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -2206444494691539348
+    second: muscle_1|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 4782896721511886013
+    second: muscle_1|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 3327837109849763411
+    second: muscle_1|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 3534921673538154161
+    second: muscle_1|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 6959242595696930598
+    second: muscle_1|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 8913336359781236160
+    second: muscle_1|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -220293356607111935
+    second: muscle_1|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -793401277655292395
+    second: muscle_0|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -9007309674313886601
+    second: muscle_0|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: -6074134487574516267
+    second: muscle_0|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -586749935927774785
+    second: muscle_0|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -4888495990438448302
+    second: muscle_0|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 8819054450100743684
+    second: muscle_0|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 3908122545890234118
+    second: muscle_0|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -4023535635521275873
+    second: muscle_0|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -5798789843242883412
+    second: muscle_0|lens|C4D Animation Take|Layer0
+  - first:
+      74: -5935329887870318946
+    second: muscle_0|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -167671241611215125
+    second: muscle_0|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -9084505452601388114
+    second: muscle_0|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -4842585092633901556
+    second: muscle_0|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -6642494520350355262
+    second: muscle_0|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -1962082750085287217
+    second: muscle_0|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -8676371737296844629
+    second: muscle_0|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 1838830268821059177
+    second: muscle_0|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 7102809575777566530
+    second: muscle_0|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 2845875244262182034
+    second: muscle_0|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 3312840587565757721
+    second: muscle_0|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -2351818679596069316
+    second: muscle_0|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 6330689950211010867
+    second: muscle_0|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 7971830161650908547
+    second: muscle_0|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -5506804433422373094
+    second: eye_muscles|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 1754558790703995848
+    second: eye_muscles|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 6901125579935495011
+    second: eye_muscles|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 5317064255005232681
+    second: eye_muscles|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 8253754640457846631
+    second: eye_muscles|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -6780631209599863877
+    second: eye_muscles|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 5519057162669876924
+    second: eye_muscles|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 6986751682325210339
+    second: eye_muscles|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 6376762432354640765
+    second: eye_muscles|lens|C4D Animation Take|Layer0
+  - first:
+      74: 214823055088195096
+    second: eye_muscles|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -3203824047739504439
+    second: eye_muscles|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 7983438915524692049
+    second: eye_muscles|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 7054909643751997170
+    second: eye_muscles|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -2894145875611223890
+    second: eye_muscles|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -8056701769859452280
+    second: eye_muscles|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -1631631020821663181
+    second: eye_muscles|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -6668109757645853068
+    second: eye_muscles|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 3287239547163152382
+    second: eye_muscles|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 160192696100514067
+    second: eye_muscles|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -8661655512239684531
+    second: eye_muscles|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 3347287584038685089
+    second: eye_muscles|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -3166234168805676910
+    second: eye_muscles|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -7153918454012987350
+    second: eye_muscles|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -2497962403137609975
+    second: vein_retina_inside_1|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -4290593709459276064
+    second: vein_retina_inside_1|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 4499551782191371784
+    second: vein_retina_inside_1|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 3847279419417064167
+    second: vein_retina_inside_1|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -4966889766526262750
+    second: vein_retina_inside_1|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -4263251145289844298
+    second: vein_retina_inside_1|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1663855117114987283
+    second: vein_retina_inside_1|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 4761813684865267886
+    second: vein_retina_inside_1|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 5548478479629919577
+    second: vein_retina_inside_1|lens|C4D Animation Take|Layer0
+  - first:
+      74: -7427745728578284755
+    second: vein_retina_inside_1|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -3120090214517864229
+    second: vein_retina_inside_1|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 6642523808893279194
+    second: vein_retina_inside_1|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -4147195958420755045
+    second: vein_retina_inside_1|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -8243143727986035309
+    second: vein_retina_inside_1|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -5844684773719322310
+    second: vein_retina_inside_1|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -4691714552697383988
+    second: vein_retina_inside_1|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 2832697419819985288
+    second: vein_retina_inside_1|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -7587932532834506603
+    second: vein_retina_inside_1|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 6410678349158425549
+    second: vein_retina_inside_1|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -8229242277140010482
+    second: vein_retina_inside_1|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -5394917527842124511
+    second: vein_retina_inside_1|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -6826048276921592349
+    second: vein_retina_inside_1|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -6538192367109019410
+    second: vein_retina_inside_1|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -2246996425188234211
+    second: artery_retina_inside_1|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 1241236080846296004
+    second: artery_retina_inside_1|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: -707508360103117762
+    second: artery_retina_inside_1|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 8126164381037675593
+    second: artery_retina_inside_1|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -5662849513578986069
+    second: artery_retina_inside_1|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -4221406765308796594
+    second: artery_retina_inside_1|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1500530033587118423
+    second: artery_retina_inside_1|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 4002692302992155349
+    second: artery_retina_inside_1|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -1977690759910952968
+    second: artery_retina_inside_1|lens|C4D Animation Take|Layer0
+  - first:
+      74: 6303725064812679466
+    second: artery_retina_inside_1|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 4721168370177968286
+    second: artery_retina_inside_1|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -2860197500119422455
+    second: artery_retina_inside_1|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 3756330026266423752
+    second: artery_retina_inside_1|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 8139227771860427918
+    second: artery_retina_inside_1|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 4372825505665795151
+    second: artery_retina_inside_1|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -6287795301670730002
+    second: artery_retina_inside_1|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 6868357909285610523
+    second: artery_retina_inside_1|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -1148863451677047983
+    second: artery_retina_inside_1|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 4793151250120952306
+    second: artery_retina_inside_1|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 1592793074758808996
+    second: artery_retina_inside_1|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -4352328253037704844
+    second: artery_retina_inside_1|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -1569252783042912139
+    second: artery_retina_inside_1|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -785216432603685715
+    second: artery_retina_inside_1|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 2384824298129052046
+    second: nerv_element_1|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -5532526036837448658
+    second: nerv_element_1|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2217748341601281695
+    second: nerv_element_1|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1185228875939483446
+    second: nerv_element_1|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 3232167876820026114
+    second: nerv_element_1|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -4014520650019432851
+    second: nerv_element_1|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 253754253137105357
+    second: nerv_element_1|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 6344252156712952280
+    second: nerv_element_1|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 2561125392843383429
+    second: nerv_element_1|lens|C4D Animation Take|Layer0
+  - first:
+      74: -1721492918660180394
+    second: nerv_element_1|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 7084918973944050268
+    second: nerv_element_1|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -4588697829594141445
+    second: nerv_element_1|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 1114232828610186542
+    second: nerv_element_1|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -579266465096695724
+    second: nerv_element_1|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -4111731506898186828
+    second: nerv_element_1|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -8896097285389825869
+    second: nerv_element_1|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 8639898695663327445
+    second: nerv_element_1|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 4894439471259754080
+    second: nerv_element_1|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -7468352576752918911
+    second: nerv_element_1|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 3172082542934356291
+    second: nerv_element_1|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 8199758106511579864
+    second: nerv_element_1|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 2894107870607093940
+    second: nerv_element_1|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 7080273726277720629
+    second: nerv_element_1|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 8844242106126657753
+    second: nerv_element_2|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 1799126808083768476
+    second: nerv_element_2|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 5555820245415215167
+    second: nerv_element_2|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 9120146496901762105
+    second: nerv_element_2|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 2629582043521127431
+    second: nerv_element_2|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -6872831206330599269
+    second: nerv_element_2|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -942135149946884199
+    second: nerv_element_2|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -3469876589118591911
+    second: nerv_element_2|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -7356376991757298027
+    second: nerv_element_2|lens|C4D Animation Take|Layer0
+  - first:
+      74: -8915597889374411573
+    second: nerv_element_2|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 7567089159094708520
+    second: nerv_element_2|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 8502603991257626173
+    second: nerv_element_2|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -903237479034380907
+    second: nerv_element_2|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 4489246581401944881
+    second: nerv_element_2|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 174611753063848397
+    second: nerv_element_2|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 2364986351854508477
+    second: nerv_element_2|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -6511861520074659848
+    second: nerv_element_2|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -7581028059273496205
+    second: nerv_element_2|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -1808301552685603657
+    second: nerv_element_2|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 4625501727125591197
+    second: nerv_element_2|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 7520183125469810970
+    second: nerv_element_2|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 4608176772828134825
+    second: nerv_element_2|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 8520251880869289576
+    second: nerv_element_2|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 8588817755080610910
+    second: nerv_element_3|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 8468399174759817093
+    second: nerv_element_3|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 7995885258224225339
+    second: nerv_element_3|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 8443147167801785037
+    second: nerv_element_3|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 8019706368228320111
+    second: nerv_element_3|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 300516333558428025
+    second: nerv_element_3|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1856818631826546706
+    second: nerv_element_3|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1585756889545084694
+    second: nerv_element_3|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -1622993404059102274
+    second: nerv_element_3|lens|C4D Animation Take|Layer0
+  - first:
+      74: 4438621025093746838
+    second: nerv_element_3|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 3763145028658339979
+    second: nerv_element_3|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 6857909410912764080
+    second: nerv_element_3|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 7127979651482802748
+    second: nerv_element_3|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 6601705804589514146
+    second: nerv_element_3|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 1320317528593380141
+    second: nerv_element_3|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 4801671471796902819
+    second: nerv_element_3|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 527767775142234624
+    second: nerv_element_3|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -6390225004734388625
+    second: nerv_element_3|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 4546841069534274609
+    second: nerv_element_3|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 2918152505254348671
+    second: nerv_element_3|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -2126958801539198748
+    second: nerv_element_3|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -6414917730433521272
+    second: nerv_element_3|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 267366098755693955
+    second: nerv_element_3|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -861475392031699111
+    second: nerv_element_4|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 3056733249297457822
+    second: nerv_element_4|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 6354829078923282919
+    second: nerv_element_4|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -2842881279658202389
+    second: nerv_element_4|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 8640603081295641856
+    second: nerv_element_4|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 1166057310301086541
+    second: nerv_element_4|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -3720151561807911065
+    second: nerv_element_4|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -2416325222385821575
+    second: nerv_element_4|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 8955772504486582677
+    second: nerv_element_4|lens|C4D Animation Take|Layer0
+  - first:
+      74: 1383785623529928414
+    second: nerv_element_4|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 7503079359081218061
+    second: nerv_element_4|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 1833324454906499020
+    second: nerv_element_4|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 5662200073445410293
+    second: nerv_element_4|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 7521048109305905901
+    second: nerv_element_4|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 2232458513573967166
+    second: nerv_element_4|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 7485189651303010629
+    second: nerv_element_4|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 5750810910610344099
+    second: nerv_element_4|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -4137840019028873329
+    second: nerv_element_4|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 3580209402543446554
+    second: nerv_element_4|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 6734558801329642510
+    second: nerv_element_4|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 2758900451453847146
+    second: nerv_element_4|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -6509374970346970352
+    second: nerv_element_4|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -7256739397736559767
+    second: nerv_element_4|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -134408837450626066
+    second: optical_nerv|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -5763097777249826295
+    second: optical_nerv|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2118742811081765670
+    second: optical_nerv|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -2411368925605331752
+    second: optical_nerv|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -5323791682412862924
+    second: optical_nerv|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 8918339535231108820
+    second: optical_nerv|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -6349982411969910478
+    second: optical_nerv|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -7057242407076113827
+    second: optical_nerv|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -2100674314432964151
+    second: optical_nerv|lens|C4D Animation Take|Layer0
+  - first:
+      74: -8968072837418867317
+    second: optical_nerv|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -3363362275384291276
+    second: optical_nerv|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -5030386797036910615
+    second: optical_nerv|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 7139431006474049884
+    second: optical_nerv|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -6590024838997657902
+    second: optical_nerv|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -7420154737229396292
+    second: optical_nerv|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 8421148114829966532
+    second: optical_nerv|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 4515646225361350478
+    second: optical_nerv|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 8881758440826684661
+    second: optical_nerv|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 1042688932833403782
+    second: optical_nerv|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 6323152775305868648
+    second: optical_nerv|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -5912227947123388524
+    second: optical_nerv|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 2437733542574475752
+    second: optical_nerv|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -1622484019490951043
+    second: optical_nerv|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -404168299221217688
+    second: eye_sphere_inside|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 5255270985941190515
+    second: eye_sphere_inside|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 3530265813671899193
+    second: eye_sphere_inside|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 2899036633301869542
+    second: eye_sphere_inside|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 1099311115563156497
+    second: eye_sphere_inside|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 1489141351040973790
+    second: eye_sphere_inside|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -5092992188616361502
+    second: eye_sphere_inside|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -796031853120896557
+    second: eye_sphere_inside|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 6420557195165013068
+    second: eye_sphere_inside|lens|C4D Animation Take|Layer0
+  - first:
+      74: 6307991471251874884
+    second: eye_sphere_inside|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -2464520540498963264
+    second: eye_sphere_inside|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 5946929457759936592
+    second: eye_sphere_inside|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -969645615682291444
+    second: eye_sphere_inside|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -2514112722955512662
+    second: eye_sphere_inside|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 4639798463226238685
+    second: eye_sphere_inside|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 6770879883631663678
+    second: eye_sphere_inside|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -1244125975602828477
+    second: eye_sphere_inside|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -7558695566868729187
+    second: eye_sphere_inside|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -3644287205504172973
+    second: eye_sphere_inside|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -9110455065878575710
+    second: eye_sphere_inside|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 6200720762504368652
+    second: eye_sphere_inside|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 1189226675675925529
+    second: eye_sphere_inside|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -1399656391453439688
+    second: eye_sphere_inside|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -6679322642253025584
+    second: eye_sphere_outside|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -3353427609556858161
+    second: eye_sphere_outside|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 1265217143959477825
+    second: eye_sphere_outside|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 7080499664139445282
+    second: eye_sphere_outside|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -2837522274976056647
+    second: eye_sphere_outside|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 7743512353092786682
+    second: eye_sphere_outside|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -3187791788474986166
+    second: eye_sphere_outside|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 6722827394080945611
+    second: eye_sphere_outside|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -8238027794626965588
+    second: eye_sphere_outside|lens|C4D Animation Take|Layer0
+  - first:
+      74: 9218537552576685304
+    second: eye_sphere_outside|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 3421513714649967601
+    second: eye_sphere_outside|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -813585121187605354
+    second: eye_sphere_outside|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 2059907316312750440
+    second: eye_sphere_outside|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 5856391646833499058
+    second: eye_sphere_outside|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 3306134135006310650
+    second: eye_sphere_outside|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -169283619687736180
+    second: eye_sphere_outside|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -2663762746692770447
+    second: eye_sphere_outside|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 8780015130173075251
+    second: eye_sphere_outside|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 4671713269613965535
+    second: eye_sphere_outside|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -3627379379950850758
+    second: eye_sphere_outside|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -6903588920209285395
+    second: eye_sphere_outside|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 4089104615505625244
+    second: eye_sphere_outside|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 6463703455375779742
+    second: eye_sphere_outside|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -4142270930650497965
+    second: vein_up|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -9048171241921625309
+    second: vein_up|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: -8756605260874996574
+    second: vein_up|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -3342704705355178368
+    second: vein_up|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -166261241541642207
+    second: vein_up|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -5757849134870203482
+    second: vein_up|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1090868942597960516
+    second: vein_up|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -409212376724821784
+    second: vein_up|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 6411601384959114361
+    second: vein_up|lens|C4D Animation Take|Layer0
+  - first:
+      74: -2883369179144993793
+    second: vein_up|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 6383849208755298002
+    second: vein_up|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -6956656495477169078
+    second: vein_up|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -3518625258497598217
+    second: vein_up|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 6896080767020752508
+    second: vein_up|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -8083248583831869395
+    second: vein_up|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 6089890594174600254
+    second: vein_up|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 1146840266139471715
+    second: vein_up|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -8449685389518124968
+    second: vein_up|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 4948517929604313895
+    second: vein_up|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -7966318867406763815
+    second: vein_up|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 6534881914765526587
+    second: vein_up|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -2397970426249913665
+    second: vein_up|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -4757668474723748831
+    second: vein_up|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 3070164085328837846
+    second: vein_down|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -4424889412652893584
+    second: vein_down|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 7922180672889927628
+    second: vein_down|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -7605559688956736423
+    second: vein_down|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 8597690986457747503
+    second: vein_down|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 3071809103680717753
+    second: vein_down|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -4423658021035468266
+    second: vein_down|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -3275615347017769916
+    second: vein_down|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 3803076085167046451
+    second: vein_down|lens|C4D Animation Take|Layer0
+  - first:
+      74: -4668726107273803830
+    second: vein_down|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -6473901348185646593
+    second: vein_down|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 9076918507360538450
+    second: vein_down|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -2685508001873751928
+    second: vein_down|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 7591950868868586343
+    second: vein_down|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -5542338473338720123
+    second: vein_down|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -9073121301730759855
+    second: vein_down|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 4005502584712987736
+    second: vein_down|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 3260899704584444277
+    second: vein_down|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -4660721396116110437
+    second: vein_down|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -5664262070841374898
+    second: vein_down|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -7853846623493157776
+    second: vein_down|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -5939698342452609848
+    second: vein_down|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 8515662935510974306
+    second: vein_down|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 1076528310470313134
+    second: eye_over_cornea|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -334316576029734600
+    second: eye_over_cornea|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2682719013597064607
+    second: eye_over_cornea|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 1910416174499183650
+    second: eye_over_cornea|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 9001828295730988522
+    second: eye_over_cornea|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 7870586031760974168
+    second: eye_over_cornea|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 4525564088447834470
+    second: eye_over_cornea|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: -3543343574099833699
+    second: eye_over_cornea|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 5396835659289020736
+    second: eye_over_cornea|lens|C4D Animation Take|Layer0
+  - first:
+      74: 7066934557330050753
+    second: eye_over_cornea|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 4109967754350754922
+    second: eye_over_cornea|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -6010533414028249036
+    second: eye_over_cornea|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 8794474118509311676
+    second: eye_over_cornea|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -5274235743387505297
+    second: eye_over_cornea|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -6154415599316668099
+    second: eye_over_cornea|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -4503165816140258392
+    second: eye_over_cornea|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 8001081958299504129
+    second: eye_over_cornea|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 7655313378212403499
+    second: eye_over_cornea|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -3118890773786284641
+    second: eye_over_cornea|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 1450392381812933910
+    second: eye_over_cornea|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -5149201024914702352
+    second: eye_over_cornea|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -7316847525201898033
+    second: eye_over_cornea|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -1071019628797180346
+    second: eye_over_cornea|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: -2395554089646794605
+    second: lens|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -3491271736619418466
+    second: lens|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 8557076910209226346
+    second: lens|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 2087311241111752678
+    second: lens|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -1027657774016060171
+    second: lens|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 7485727140549860101
+    second: lens|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1143897627180833818
+    second: lens|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 5889758548240264819
+    second: lens|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -6691081369314598947
+    second: lens|lens|C4D Animation Take|Layer0
+  - first:
+      74: 5545709413863785857
+    second: lens|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 6975087420954873235
+    second: lens|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -1645870231959590059
+    second: lens|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 2553869601864420701
+    second: lens|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -1967763549074113182
+    second: lens|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 2888737715590609868
+    second: lens|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 468882383783248647
+    second: lens|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -1668563189832620148
+    second: lens|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 5592120525881717291
+    second: lens|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 5756866361958149454
+    second: lens|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 2293592893879011454
+    second: lens|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 195507223034092338
+    second: lens|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -3117621295398219405
+    second: lens|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -8509856519844947309
+    second: lens|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 6887311323865099622
+    second: cornea_inside|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -7914722865710031559
+    second: cornea_inside|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2273223565059268142
+    second: cornea_inside|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 8641694798016813810
+    second: cornea_inside|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 3444580491158646608
+    second: cornea_inside|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: -9127981776312136314
+    second: cornea_inside|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2248141260582903701
+    second: cornea_inside|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 3712326417162008978
+    second: cornea_inside|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 3733160212070928128
+    second: cornea_inside|lens|C4D Animation Take|Layer0
+  - first:
+      74: 5428898349765069232
+    second: cornea_inside|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 1381608221295348827
+    second: cornea_inside|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: -7525534301488761204
+    second: cornea_inside|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 1324984317629721741
+    second: cornea_inside|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 5013682354318637627
+    second: cornea_inside|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: 7714743348639355128
+    second: cornea_inside|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: 2560760421134664090
+    second: cornea_inside|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -3325384390397170899
+    second: cornea_inside|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 3220808717089076129
+    second: cornea_inside|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 8206938395804895642
+    second: cornea_inside|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: -5407023139359827594
+    second: cornea_inside|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: -666727312531193462
+    second: cornea_inside|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: -1711999574293266945
+    second: cornea_inside|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 2210946131671726087
+    second: cornea_inside|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 7769163242699144300
+    second: cornea_outside|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -2023759643018355197
+    second: cornea_outside|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: 5701630229688502696
+    second: cornea_outside|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: 2769425372630537797
+    second: cornea_outside|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: -4052317169533022027
+    second: cornea_outside|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 7214460322441268746
+    second: cornea_outside|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: -4843333704046858139
+    second: cornea_outside|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 8874197747976219687
+    second: cornea_outside|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: 1448205791251098337
+    second: cornea_outside|lens|C4D Animation Take|Layer0
+  - first:
+      74: -6044587330944034246
+    second: cornea_outside|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: 6579280571549496851
+    second: cornea_outside|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 3900591427551760930
+    second: cornea_outside|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: 3989653475515832607
+    second: cornea_outside|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: 2049593623616791221
+    second: cornea_outside|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -7013543153299144481
+    second: cornea_outside|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -1832799097882489731
+    second: cornea_outside|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: 7511450894701487972
+    second: cornea_outside|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: -1267214026088596648
+    second: cornea_outside|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: 7796059669969618523
+    second: cornea_outside|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 14021527475323233
+    second: cornea_outside|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 7896666595108351910
+    second: cornea_outside|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 3543500035960832642
+    second: cornea_outside|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -973571068773048295
+    second: cornea_outside|vein_up|C4D Animation Take|Layer0
+  - first:
+      74: 5392364212054281617
+    second: half_veins|artery_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: -4205201175422284090
+    second: half_veins|cornea_inside|C4D Animation Take|Layer0
+  - first:
+      74: -1651018978292037948
+    second: half_veins|cornea_outside|C4D Animation Take|Layer0
+  - first:
+      74: -6409763335907552949
+    second: half_veins|eye_muscles|C4D Animation Take|Layer0
+  - first:
+      74: 8145692584468904186
+    second: half_veins|eye_over_cornea|C4D Animation Take|Layer0
+  - first:
+      74: 2481875464620985631
+    second: half_veins|eye_sphere_inside|C4D Animation Take|Layer0
+  - first:
+      74: 2664486044377778147
+    second: half_veins|eye_sphere_outside|C4D Animation Take|Layer0
+  - first:
+      74: 5376963253502968997
+    second: half_veins|half_veins|C4D Animation Take|Layer0
+  - first:
+      74: -8894176186859544583
+    second: half_veins|lens|C4D Animation Take|Layer0
+  - first:
+      74: -7457741931492622402
+    second: half_veins|muscle_0|C4D Animation Take|Layer0
+  - first:
+      74: -2090280982373141924
+    second: half_veins|muscle_1|C4D Animation Take|Layer0
+  - first:
+      74: 2214305550142277319
+    second: half_veins|muscle_3|C4D Animation Take|Layer0
+  - first:
+      74: -60467636892179696
+    second: half_veins|muscle_4|C4D Animation Take|Layer0
+  - first:
+      74: -5899243702770287085
+    second: half_veins|muscle_5|C4D Animation Take|Layer0
+  - first:
+      74: -1416763332295245057
+    second: half_veins|muscle_6|C4D Animation Take|Layer0
+  - first:
+      74: -3484002551455413623
+    second: half_veins|nerv_element_1|C4D Animation Take|Layer0
+  - first:
+      74: -4426833602109195030
+    second: half_veins|nerv_element_2|C4D Animation Take|Layer0
+  - first:
+      74: 33156741803996577
+    second: half_veins|nerv_element_3|C4D Animation Take|Layer0
+  - first:
+      74: -8008990512265199407
+    second: half_veins|nerv_element_4|C4D Animation Take|Layer0
+  - first:
+      74: 1323979867306791963
+    second: half_veins|optical_nerv|C4D Animation Take|Layer0
+  - first:
+      74: 7922899461376268567
+    second: half_veins|vein_down|C4D Animation Take|Layer0
+  - first:
+      74: 5088206028093619473
+    second: half_veins|vein_retina_inside_1|C4D Animation Take|Layer0
+  - first:
+      74: 2939542433608119852
+    second: half_veins|vein_up|C4D Animation Take|Layer0
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 565d0591152c7fe42a553b2fdea8fd5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: 5d87bf1480f235b4d908c7d0e5328444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.4
+    second: {fileID: 2100000, guid: 34e184268fd8c0c4fa14407ecc524f4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.5
+    second: {fileID: 2100000, guid: 06c9696c1ad044543991940396b4a401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.6
+    second: {fileID: 2100000, guid: 2ea53bc12a9352349b533281b18d8ddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.7
+    second: {fileID: 2100000, guid: d5e53112505155047a677ef0a874728e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: 86e55e254a810d048a6de936e3652dca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ojo
+    second: {fileID: 2100000, guid: 27ea83b9728c49643aa0dbf26bc7c094, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
