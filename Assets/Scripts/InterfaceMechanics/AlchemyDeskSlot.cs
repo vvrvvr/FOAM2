@@ -55,7 +55,7 @@ public class AlchemyDeskSlot : MonoBehaviour
         {
             currentInterface = other.GetComponent<InterfaceObject>();
             currentInterface.MoveInterfaceToSlot(0f, 0.3f, itemPlace );
-            currentInterface.SetInHandScale(1f, 0.3f, 0.3f);
+            currentInterface.SetInHandScale(1.5f, 0.3f, 0.3f);
             InterfaceTypeInSlot = currentInterface.interfaceType;
             isSlotBusy = true;
             wait = StartCoroutine(WaitToMerge(1f));
@@ -64,7 +64,7 @@ public class AlchemyDeskSlot : MonoBehaviour
 
     public void RejectMerge()
     {
-        currentInterface.isDropped(_dir, 5f, 7f); 
+        currentInterface.isDropped(_dir, 6f, 7f); 
         currentInterface.SetInterfaceLayer(15);
         currentInterface = null;
         InterfaceTypeInSlot = 0;

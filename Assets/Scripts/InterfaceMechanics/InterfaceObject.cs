@@ -21,7 +21,7 @@ public class InterfaceObject : MonoBehaviour
     private Vector3 dropDir = Vector3.zero;
 
     public int interfaceType = 1;
-    [SerializeField]private Vector3 onScreenPosition;
+    public Vector3 onScreenPosition;
     [SerializeField]private Quaternion onScreenRotation;
     public Transform _parentObj;
     public bool CanTake = true;
@@ -133,6 +133,12 @@ public class InterfaceObject : MonoBehaviour
         StopCoroutine(_moveToCoroutine);
         _moveToCoroutine = StartCoroutine(MoveAndRotateTo(time, speed, targetPosition.position, targetPosition.rotation));
         gameObject.layer = 0;
+    }
+    public void MoveInterfaceToScreen(float time, float speed, Vector3 position)
+    {
+        StopCoroutine(_moveToCoroutine);
+        _moveToCoroutine = StartCoroutine(MoveAndRotateTo(time, speed, position, onScreenRotation));
+        //gameObject.layer = 0;
     }
 
     public void SetInterfaceLayer(int layer)
