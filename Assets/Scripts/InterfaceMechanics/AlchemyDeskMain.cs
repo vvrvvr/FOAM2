@@ -35,6 +35,12 @@ public class AlchemyDeskMain : MonoBehaviour
                         newInterface.gameObject.SetActive(true);
                         newInterface.isDropped(Vector3.zero, 0f, 1f);
                         break;
+                    case 2:
+                        var newInterface2 = GetRandomElementFromList(_interfaceManager.interfaceListType3);
+                        newInterface2.transform.position = SpawnPosition.position;
+                        newInterface2.gameObject.SetActive(true);
+                        newInterface2.isDropped(Vector3.zero, 0f, 1f);
+                        break;
                     default:
                         Debug.LogError("Invalid interface type in slot!");
                         break;

@@ -55,7 +55,7 @@ public class AlchemyDeskSlot : MonoBehaviour
         {
             currentInterface = other.GetComponent<InterfaceObject>();
             currentInterface.MoveInterfaceToSlot(0f, 0.3f, itemPlace );
-            currentInterface.SetInHandScale(1.1f, 0.3f, 0.3f);
+            currentInterface.SetInHandScale(1f, 0.3f, 0.3f);
             InterfaceTypeInSlot = currentInterface.interfaceType;
             isSlotBusy = true;
             wait = StartCoroutine(WaitToMerge(1f));

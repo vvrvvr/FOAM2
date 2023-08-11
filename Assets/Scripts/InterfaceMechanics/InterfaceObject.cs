@@ -90,7 +90,7 @@ public class InterfaceObject : MonoBehaviour
 
     private void ScaleOverTime(float targetScale, float time)
     {
-        var target = new Vector3(_originalScale.x / this.targetScale, _originalScale.y / targetScale,
+        var target = new Vector3(_originalScale.x / targetScale, _originalScale.y / targetScale,
             _originalScale.z / targetScale);
         transform.DOScale(target, time).OnComplete(() => { _isScaling = false; });
     }
