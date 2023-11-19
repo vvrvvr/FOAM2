@@ -12,15 +12,15 @@ public class ManaEmitter : MonoBehaviour
         OnManaChanged?.Invoke(mana);
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            ChangeMana(-10);
-        }
-        if(Input.GetKeyDown(KeyCode.L))
-        {
-            ChangeMana(5);
-        }
-    }
+    // private void Update()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.K))
+    //     {
+    //         ChangeMana(-10);
+    //     }
+    //     if(Input.GetKeyDown(KeyCode.L))
+    //     {
+    //         ChangeMana(5);
+    //     }
+    // }
 }
