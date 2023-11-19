@@ -3,42 +3,7 @@ guid: afb68941735b3754fbf603d693234337
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Photogram1
-    second: {fileID: 2100000, guid: 0fe47082699e6eb4ab7d3304e1d801b6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model.004
-    second: {fileID: 2100000, guid: 3c912f59913fd0b4ebbe52c9d2293e0a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model1.004
-    second: {fileID: 2100000, guid: 28e63502f9b80e7498f36ea0ec795b3c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model2.004
-    second: {fileID: 2100000, guid: 2eccb763d6b68354a8dbbfa91c4bf9c3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model3.004
-    second: {fileID: 2100000, guid: b6a3356813c299f458fe53d88fc7f97e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model4.004
-    second: {fileID: 2100000, guid: 40ee725b3bc84e844a30ea94c916e9fb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: model_Material_u1_v1
-    second: {fileID: 2100000, guid: c0bc2c87372d4eb478b85a181ae8e88e, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

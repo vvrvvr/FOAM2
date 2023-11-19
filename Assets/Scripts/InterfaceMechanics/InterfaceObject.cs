@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -8,6 +9,7 @@ public class InterfaceObject : MonoBehaviour
     [SerializeField] private float targetScale = 0.5f;
     [SerializeField] private float scaleTime = 0.2f;
     [SerializeField] private float rotationSpeed = 1f;
+    public List<GameObject> connectedObjects = new List<GameObject>();
     private Vector3 _originalScale;
     private bool _isScaling = false;
     private bool _isRotating = false;
@@ -148,9 +150,14 @@ public class InterfaceObject : MonoBehaviour
 
     public void DeleteInterface()
     {
+        foreach (var obj in connectedObjects)
+        {
+            Destroy(obj);
+        }
         _mInterfaceManager.RemoveFromList(this, interfaceType);
         _mInterfaceManager.CheckInterfaceFree();
         Destroy(gameObject);
+        
     }
     
 }

@@ -3,27 +3,7 @@ guid: 7b30ba0446604e9449bbee2d2444be18
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: material_0.002
-    second: {fileID: 2100000, guid: 1d58d56f847e82546893aaa6103ad341, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: notredame_todo_Material_u1_v1.001
-    second: {fileID: 2100000, guid: df3e9e6d6ecfdf740a76da754361fac2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: notredame_todo_Material_u2_v1.001
-    second: {fileID: 2100000, guid: bd67eeff46bcd2e4cb845548dc9c522e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: output
-    second: {fileID: 2100000, guid: 3828264d2638c7743a178c35eaf49463, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

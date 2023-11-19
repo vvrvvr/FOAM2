@@ -3,37 +3,7 @@ guid: 927a0353e38795a41b5eca9bada21be6
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Birch.001
-    second: {fileID: 2100000, guid: 0d402effd8843e34c994e5645ddc1f80, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Plaster - Nodes.004
-    second: {fileID: 2100000, guid: d18af29c5432fe8439d90f62f9d9d5c9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Plaster - Nodes.005
-    second: {fileID: 2100000, guid: d8c8ddaef1fcad342a02f7dfa74a80e6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Plaster - Nodes.006
-    second: {fileID: 2100000, guid: 81c0f0380372d1d4da00fef8db719a3f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Plaster - Nodes.007
-    second: {fileID: 2100000, guid: f1835f6fc097e004fa5d2bb6b7a8d1cc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: material_0.001
-    second: {fileID: 2100000, guid: 7221b1782d3cad540a062622ccb36f2a, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
